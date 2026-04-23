@@ -22,6 +22,13 @@ const topics = [
     href: "/studies/design-patterns/hoc",
     category: "Design patterns",
   },
+  {
+    title: "Custom hooks",
+    description:
+      "Extract reusable stateful logic with use*-named functions; Rules of Hooks, API shape, and App Router notes.",
+    href: "/studies/design-patterns/custom-hooks",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {

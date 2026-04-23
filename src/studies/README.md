@@ -9,5 +9,6 @@ Topics live under `src/studies/<category>/<topic>/`. Each folder should contain 
 | Container / presentational components | [`design-patterns/container-components`](./design-patterns/container-components/) | `/studies/design-patterns/container-components` |
 | Controlled / uncontrolled components | [`design-patterns/controlled-uncontrolled-components`](./design-patterns/controlled-uncontrolled-components/) | `/studies/design-patterns/controlled-uncontrolled-components` |
 | Higher-Order Components (HOC) | [`design-patterns/hoc`](./design-patterns/hoc/) | `/studies/design-patterns/hoc` |
+| Custom hooks | [`design-patterns/custom-hooks`](./design-patterns/custom-hooks/) | `/studies/design-patterns/custom-hooks` |
 
 Add new rows here when you create more topics.
