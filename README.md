@@ -24,3 +24,4 @@ Open [http://localhost:3000](http://localhost:3000) for the study index and link
 ---
 
 This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) (Next.js 14, TypeScript, Tailwind, App Router).
+# React-Next-studies
