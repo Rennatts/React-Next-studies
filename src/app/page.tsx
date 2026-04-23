@@ -8,6 +8,20 @@ const topics = [
     href: "/studies/design-patterns/container-components",
     category: "Design patterns",
   },
+  {
+    title: "Controlled vs uncontrolled components",
+    description:
+      "React form inputs: controlled (state-driven) vs uncontrolled (DOM-driven) and when to pick each.",
+    href: "/studies/design-patterns/controlled-uncontrolled-components",
+    category: "Design patterns",
+  },
+  {
+    title: "Higher-Order Components (HOC)",
+    description:
+      "Enhance components via functions: withX(Component) → EnhancedComponent, plus trade-offs and modern alternatives.",
+    href: "/studies/design-patterns/hoc",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
