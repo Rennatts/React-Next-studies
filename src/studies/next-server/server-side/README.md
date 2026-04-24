@@ -73,6 +73,8 @@ Move **`"use client"`** as **far down** the tree as reasonable: keep data loadin
 
 ## Related studies in this repo
 
+- [React Server Components](../server-components/README.md) — default server vs `"use client"`, composition, small demos.
+- [Suspense for data fetching (Next.js)](../suspense-data-fetching/README.md) — parallel / nested Suspense with async RSC and `loading.tsx`.
 - [Async App Router rendering](../../advanced-concepts/async-react-router/README.md) — streaming, `loading.tsx`, Suspense.
 - [Building an API layer](../../api/api-layer/README.md) — typed fetch from Server Components or Route Handlers.
 - [API layer with React Query](../../api/api-layer-react-query/README.md) — mostly client cache; contrast with server `fetch` caching.

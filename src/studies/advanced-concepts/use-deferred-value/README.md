@@ -21,13 +21,12 @@ Good cases:
 
 Your UI can render cheap parts from the immediate value and expensive parts from the deferred value.
 
-## Example in this folder
-
-We filter a large list of items. The input uses the immediate value, while the expensive filtered list uses the deferred one.
+## Examples in this folder
 
 | File | Role |
 |------|------|
-| `UseDeferredValueDemo.tsx` | Interactive demo showing immediate vs deferred query. |
+| `UseDeferredValueExamples.tsx` | Snippets + patterns: same-component defer, deferring a **prop** in a child, `isStale`. |
+| `UseDeferredValueDemo.tsx` | Larger list (~4k rows): immediate `query` in the input, deferred value driving the filter. |
 
 ## Try it
 

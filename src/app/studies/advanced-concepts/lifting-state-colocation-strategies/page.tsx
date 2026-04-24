@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { UseDeferredValueDemo } from "@/studies/advanced-concepts/use-deferred-value/UseDeferredValueDemo";
-import { UseDeferredValueExamples } from "@/studies/advanced-concepts/use-deferred-value/UseDeferredValueExamples";
+import { LiftingStateColocationExamples } from "@/studies/advanced-concepts/lifting-state-colocation-strategies/LiftingStateColocationExamples";
 
 export const metadata: Metadata = {
-  title: "Study: useDeferredValue",
+  title: "Study: Lifting state up and colocation strategies",
   description:
-    "Advanced concept: keep urgent updates responsive by deferring expensive derived UI with useDeferredValue.",
+    "When to keep state local, when to lift to a shared parent, and how state boundaries limit re-renders.",
 };
 
-export default function UseDeferredValueStudyPage() {
+export default function LiftingStateColocationStrategiesPage() {
   return (
     <div className="mx-auto flex min-h-screen max-w-3xl flex-col gap-8 px-6 py-12">
       <header className="space-y-2">
@@ -17,17 +16,25 @@ export default function UseDeferredValueStudyPage() {
           Advanced concepts
         </p>
         <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-          useDeferredValue
+          Lifting state up and colocation strategies
         </h1>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Defer non-urgent UI derived from fast-changing input. Read the topic notes in{" "}
+          Notes:{" "}
           <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">
-            src/studies/advanced-concepts/use-deferred-value/README.md
+            src/studies/advanced-concepts/lifting-state-colocation-strategies/README.md
           </code>
-          ; code patterns in{" "}
+          . Examples:{" "}
           <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">
-            UseDeferredValueExamples.tsx
+            LiftingStateColocationExamples.tsx
           </code>
+          . Deeper demos:{" "}
+          <Link className="underline underline-offset-4" href="/studies/advanced-concepts/state-collocation">
+            state collocation
+          </Link>
+          ,{" "}
+          <Link className="underline underline-offset-4" href="/studies/advanced-concepts/lift-components-up">
+            lift components up
+          </Link>
           .
         </p>
         <Link
@@ -40,21 +47,10 @@ export default function UseDeferredValueStudyPage() {
 
       <section aria-labelledby="examples-heading" className="space-y-3">
         <h2 id="examples-heading" className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
-          Examples (code + runnable)
+          Examples (runnable)
         </h2>
-        <UseDeferredValueExamples />
-      </section>
-
-      <section aria-labelledby="demo-heading" className="space-y-3">
-        <h2
-          id="demo-heading"
-          className="text-sm font-semibold text-zinc-900 dark:text-zinc-50"
-        >
-          Larger stress demo
-        </h2>
-        <UseDeferredValueDemo />
+        <LiftingStateColocationExamples />
       </section>
     </div>
   );
 }
-

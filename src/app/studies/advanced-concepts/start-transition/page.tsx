@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { UseDeferredValueDemo } from "@/studies/advanced-concepts/use-deferred-value/UseDeferredValueDemo";
-import { UseDeferredValueExamples } from "@/studies/advanced-concepts/use-deferred-value/UseDeferredValueExamples";
+import { StartTransitionExamples } from "@/studies/advanced-concepts/start-transition/StartTransitionExamples";
+import { UseTransitionDemo } from "@/studies/advanced-concepts/use-transition/UseTransitionDemo";
 
 export const metadata: Metadata = {
-  title: "Study: useDeferredValue",
+  title: "Study: startTransition",
   description:
-    "Advanced concept: keep urgent updates responsive by deferring expensive derived UI with useDeferredValue.",
+    "Mark non-urgent React updates with startTransition and useTransition; batching, isPending, and tab-style switches.",
 };
 
-export default function UseDeferredValueStudyPage() {
+export default function StartTransitionStudyPage() {
   return (
     <div className="mx-auto flex min-h-screen max-w-3xl flex-col gap-8 px-6 py-12">
       <header className="space-y-2">
@@ -17,17 +17,21 @@ export default function UseDeferredValueStudyPage() {
           Advanced concepts
         </p>
         <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-          useDeferredValue
+          startTransition
         </h1>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-          Defer non-urgent UI derived from fast-changing input. Read the topic notes in{" "}
+          Notes:{" "}
           <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">
-            src/studies/advanced-concepts/use-deferred-value/README.md
+            src/studies/advanced-concepts/start-transition/README.md
           </code>
-          ; code patterns in{" "}
+          . Examples:{" "}
           <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">
-            UseDeferredValueExamples.tsx
+            StartTransitionExamples.tsx
           </code>
+          . Related study:{" "}
+          <Link className="underline underline-offset-4" href="/studies/advanced-concepts/use-transition">
+            useTransition
+          </Link>
           .
         </p>
         <Link
@@ -42,19 +46,15 @@ export default function UseDeferredValueStudyPage() {
         <h2 id="examples-heading" className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
           Examples (code + runnable)
         </h2>
-        <UseDeferredValueExamples />
+        <StartTransitionExamples />
       </section>
 
-      <section aria-labelledby="demo-heading" className="space-y-3">
-        <h2
-          id="demo-heading"
-          className="text-sm font-semibold text-zinc-900 dark:text-zinc-50"
-        >
-          Larger stress demo
+      <section aria-labelledby="stress-heading" className="space-y-3">
+        <h2 id="stress-heading" className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+          Larger list demo (from useTransition study)
         </h2>
-        <UseDeferredValueDemo />
+        <UseTransitionDemo />
       </section>
     </div>
   );
 }
-

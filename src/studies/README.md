@@ -47,13 +47,20 @@ Add new rows here when you create more topics.
 | Keys in React | [`advanced-concepts/keys`](./advanced-concepts/keys/) | `/studies/advanced-concepts/keys` |
 | Event listeners | [`advanced-concepts/event-listeners`](./advanced-concepts/event-listeners/) | `/studies/advanced-concepts/event-listeners` |
 | useLayoutEffect | [`advanced-concepts/use-layout-effect`](./advanced-concepts/use-layout-effect/) | `/studies/advanced-concepts/use-layout-effect` |
+| Rendering lifecycle (render vs commit) | [`advanced-concepts/rendering-lifecycle`](./advanced-concepts/rendering-lifecycle/) | `/studies/advanced-concepts/rendering-lifecycle` |
+| Reconciliation and virtual DOM | [`advanced-concepts/reconciliation-virtual-dom`](./advanced-concepts/reconciliation-virtual-dom/) | `/studies/advanced-concepts/reconciliation-virtual-dom` |
 | useId | [`advanced-concepts/use-id`](./advanced-concepts/use-id/) | `/studies/advanced-concepts/use-id` |
 | useCallback as ref (callback refs) | [`advanced-concepts/use-callback-ref`](./advanced-concepts/use-callback-ref/) | `/studies/advanced-concepts/use-callback-ref` |
 | useCallback (referential integrity) | [`advanced-concepts/use-callback-reference-integrity`](./advanced-concepts/use-callback-reference-integrity/) | `/studies/advanced-concepts/use-callback-reference-integrity` |
 | useMemo (avoid unnecessary work) | [`advanced-concepts/use-memo-avoid-rerenders`](./advanced-concepts/use-memo-avoid-rerenders/) | `/studies/advanced-concepts/use-memo-avoid-rerenders` |
+| State vs props vs derived state | [`advanced-concepts/state-props-derived-state`](./advanced-concepts/state-props-derived-state/) | `/studies/advanced-concepts/state-props-derived-state` |
+| Composition vs inheritance | [`advanced-concepts/composition-vs-inheritance`](./advanced-concepts/composition-vs-inheritance/) | `/studies/advanced-concepts/composition-vs-inheritance` |
+| Lifting state up and colocation strategies | [`advanced-concepts/lifting-state-colocation-strategies`](./advanced-concepts/lifting-state-colocation-strategies/) | `/studies/advanced-concepts/lifting-state-colocation-strategies` |
 | State collocation | [`advanced-concepts/state-collocation`](./advanced-concepts/state-collocation/) | `/studies/advanced-concepts/state-collocation` |
 | Lift components up (state boundary) | [`advanced-concepts/lift-components-up`](./advanced-concepts/lift-components-up/) | `/studies/advanced-concepts/lift-components-up` |
+| Concurrent rendering | [`advanced-concepts/concurrent-rendering`](./advanced-concepts/concurrent-rendering/) | `/studies/advanced-concepts/concurrent-rendering` |
 | useDeferredValue | [`advanced-concepts/use-deferred-value`](./advanced-concepts/use-deferred-value/) | `/studies/advanced-concepts/use-deferred-value` |
+| startTransition | [`advanced-concepts/start-transition`](./advanced-concepts/start-transition/) | `/studies/advanced-concepts/start-transition` |
 | useTransition | [`advanced-concepts/use-transition`](./advanced-concepts/use-transition/) | `/studies/advanced-concepts/use-transition` |
 | Async App Router rendering | [`advanced-concepts/async-react-router`](./advanced-concepts/async-react-router/) | `/studies/advanced-concepts/async-react-router` |
 
@@ -70,6 +77,8 @@ Add new rows here when you create more topics.
 |-------|--------|------------|
 | Overview (topic list) | [`next-server`](./next-server/) | `/studies/next-server` |
 | Server-side in the App Router | [`next-server/server-side`](./next-server/server-side/) | `/studies/next-server/server-side` |
+| React Server Components | [`next-server/server-components`](./next-server/server-components/) | `/studies/next-server/server-components` |
+| Suspense for data fetching (Next.js) | [`next-server/suspense-data-fetching`](./next-server/suspense-data-fetching/) | `/studies/next-server/suspense-data-fetching` |
 
 ## Performance optimization
 

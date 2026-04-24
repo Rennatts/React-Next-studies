@@ -7,5 +7,7 @@ Notes in this folder focus on **server-side behavior in the Next.js App Router**
 | Topic | Folder | Route |
 |-------|--------|--------|
 | Server-side in the App Router | [`server-side`](./server-side/README.md) (notes + [`ServerSideRscFetchDemo.tsx`](./server-side/ServerSideRscFetchDemo.tsx)) | `/studies/next-server/server-side` |
+| React Server Components | [`server-components`](./server-components/README.md) | `/studies/next-server/server-components` |
+| Suspense for data fetching (Next.js) | [`suspense-data-fetching`](./suspense-data-fetching/README.md) | `/studies/next-server/suspense-data-fetching` |
 
 Add more rows here as you split out caching, auth, Route Handlers, etc.

@@ -48,6 +48,22 @@ export default function NextServerOverviewPage() {
               Server-side in the App Router →
             </Link>
           </li>
+          <li>
+            <Link
+              href="/studies/next-server/server-components"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              React Server Components →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/next-server/suspense-data-fetching"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Suspense for data fetching (Next.js) →
+            </Link>
+          </li>
         </ul>
       </section>
     </div>

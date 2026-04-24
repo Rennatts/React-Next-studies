@@ -28,7 +28,7 @@ const [isPending, startTransition] = useTransition();
 
 They can be used together, but often one is enough.
 
-## Example in this folder
+## Examples in this folder
 
 We update an expensive filtered list in a transition. The input updates immediately; the list update is deferred and shows an “Updating…” indicator while pending.
 
@@ -36,7 +36,9 @@ We update an expensive filtered list in a transition. The input updates immediat
 |------|------|
 | `UseTransitionDemo.tsx` | Interactive demo using `startTransition` + `isPending`. |
 
+Focused patterns (named `startTransition` import, batching, tabs) live under [startTransition](../start-transition/README.md).
+
 ## Try it
 
-Run the app and open `/studies/advanced-concepts/use-transition`.
+Run the app and open `/studies/advanced-concepts/use-transition`, or `/studies/advanced-concepts/start-transition` for `startTransition`-centric examples.
 

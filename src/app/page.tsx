@@ -205,6 +205,20 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "Rendering lifecycle (render vs commit)",
+    description:
+      "Reconciliation vs DOM commit: when render runs, when useLayoutEffect vs useEffect fire, paint, and Strict Mode caveats.",
+    href: "/studies/advanced-concepts/rendering-lifecycle",
+    category: "Advanced concepts",
+  },
+  {
+    title: "Reconciliation and virtual DOM",
+    description:
+      "React elements as UI descriptions, diffing and DOM reuse, keys in lists, and when subtrees remount.",
+    href: "/studies/advanced-concepts/reconciliation-virtual-dom",
+    category: "Advanced concepts",
+  },
+  {
     title: "useId",
     description:
       "Generate stable, SSR-safe ids for labels and ARIA attributes; avoid Math.random() hydration mismatches.",
@@ -233,6 +247,27 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "State vs props vs derived state",
+    description:
+      "Props as inputs, owned state, values derived at render, controlled fields, key reset for drafts, and redundant prop mirrors.",
+    href: "/studies/advanced-concepts/state-props-derived-state",
+    category: "Advanced concepts",
+  },
+  {
+    title: "Composition vs inheritance",
+    description:
+      "children, slot props, wrappers, and hooks for reuse—instead of subclassing components for UI specialization.",
+    href: "/studies/advanced-concepts/composition-vs-inheritance",
+    category: "Advanced concepts",
+  },
+  {
+    title: "Lifting state up and colocation strategies",
+    description:
+      "Keep state as low as possible until sharing needs it; lift to the lowest common parent and split stateless shells from stateful islands.",
+    href: "/studies/advanced-concepts/lifting-state-colocation-strategies",
+    category: "Advanced concepts",
+  },
+  {
     title: "State collocation",
     description:
       "Keep state in the lowest owner that needs it so siblings do not re-render; lift only when sharing requires it.",
@@ -247,10 +282,24 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "Concurrent rendering",
+    description:
+      "Urgent vs transition updates, interruptible work, and compact useTransition / useDeferredValue list filtering examples.",
+    href: "/studies/advanced-concepts/concurrent-rendering",
+    category: "Advanced concepts",
+  },
+  {
     title: "useDeferredValue",
     description:
       "Defer expensive derived UI so typing stays responsive; filter large lists using a deferred query.",
     href: "/studies/advanced-concepts/use-deferred-value",
+    category: "Advanced concepts",
+  },
+  {
+    title: "startTransition",
+    description:
+      "Named import vs useTransition hook: non-urgent updates, batching setState, isPending, and tab-style switches.",
+    href: "/studies/advanced-concepts/start-transition",
     category: "Advanced concepts",
   },
   {
@@ -293,6 +342,20 @@ const topics = [
     description:
       "Server Components default, async RSC, fetch caching and revalidate, dynamic APIs, Server Actions vs Route Handlers, secrets, and the client boundary.",
     href: "/studies/next-server/server-side",
+    category: "Next.js (server)",
+  },
+  {
+    title: "React Server Components (Next.js)",
+    description:
+      "Default RSC in the App Router, async server pages, client islands, serializable props, and live fetch + clock demos.",
+    href: "/studies/next-server/server-components",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Suspense for data fetching (Next.js)",
+    description:
+      "Streaming with Suspense and async RSC, parallel boundaries, nested fallbacks, loading.tsx, and App Router patterns.",
+    href: "/studies/next-server/suspense-data-fetching",
     category: "Next.js (server)",
   },
   {
