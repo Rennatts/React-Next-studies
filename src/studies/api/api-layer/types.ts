@@ -8,3 +8,11 @@ export type GetProductsResponse = {
   products: Product[];
 };
 
+export type GetProductsPageResponse = {
+  products: Product[];
+  page: number;
+  limit: number;
+  total: number;
+  totalPages: number;
+};
+

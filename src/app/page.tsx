@@ -148,6 +148,13 @@ const topics = [
     href: "/studies/api/api-layer",
     category: "API",
   },
+  {
+    title: "API layer with React Query",
+    description:
+      "Use TanStack Query on top of the API client to get caching, refetching, and better async state management.",
+    href: "/studies/api/api-layer-react-query",
+    category: "API",
+  },
 ] as const;
 
 export default function Home() {

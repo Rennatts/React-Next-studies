@@ -39,3 +39,4 @@ Add new rows here when you create more topics.
 | Topic | Folder | Demo route |
 |-------|--------|------------|
 | Building an API layer | [`api/api-layer`](./api/api-layer/) | `/studies/api/api-layer` |
+| API layer with React Query | [`api/api-layer-react-query`](./api/api-layer-react-query/) | `/studies/api/api-layer-react-query` |
