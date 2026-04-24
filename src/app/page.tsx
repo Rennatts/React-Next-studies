@@ -85,6 +85,13 @@ const topics = [
     href: "/studies/advanced-concepts/error-boundaries",
     category: "Advanced concepts",
   },
+  {
+    title: "Keys in React",
+    description:
+      "How React reconciles lists using keys; see why using array indices can cause state to jump after reordering.",
+    href: "/studies/advanced-concepts/keys",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
