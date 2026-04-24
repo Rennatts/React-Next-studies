@@ -95,6 +95,73 @@ If you’re firing multiple requests quickly (search as you type):
 - Cancel previous requests (`AbortController`)
 - Coalesce multiple updates into one state change
 
+## Error logging (what/where/how)
+
+Error **handling** (showing a message, retries) and error **logging** (capturing diagnostics for you) are different concerns. A good API layer makes logging consistent.
+
+### What to log
+
+Aim for high-signal, low-risk data:
+
+- **Location**: endpoint path + method
+- **HTTP status** (if available)
+- **A request id / correlation id** (if your backend sends one, e.g. `x-request-id`)
+- **Timestamp** and a short **message**
+- **Non-sensitive context**: feature flag, screen name, app version, user *role* (avoid user PII)
+
+Avoid logging:
+
+- Passwords/tokens
+- Full request/response bodies that may contain PII
+- Raw headers like `Authorization`
+
+### Where to log
+
+- **Client-side**: capture UI failures (network down, CORS, 4xx/5xx surfaced to UI). Use a service like Sentry/Datadog RUM, or your own logging endpoint.
+- **Server-side** (Route Handlers / Server Components): log with server tooling (stdout + platform logs, or APM). Server logs can include more detail but still avoid secrets.
+
+Practical rule:
+
+- **Client logs** help you understand what users experienced.
+- **Server logs** help you debug root causes.
+
+### How to implement it (pattern)
+
+Treat logging as an adapter:
+
+- API client normalizes errors (`ApiError`)
+- UI decides what to show
+- Logger reports diagnostics (and can be swapped per environment)
+
+Example logger shape:
+
+```ts
+type LogContext = {
+  where: string; // "ProductsDemo.load" or "api.getProducts"
+  url?: string;
+  method?: string;
+  status?: number;
+};
+
+export function logError(error: unknown, ctx: LogContext) {
+  if (error instanceof Error) {
+    // In real apps, replace with Sentry.captureException(error, { extra: ctx })
+    console.error(ctx.where, { ...ctx, message: error.message, name: error.name });
+    return;
+  }
+  console.error(ctx.where, { ...ctx, error });
+}
+```
+
+### Logging `ApiError`
+
+Because `ApiError` has `status` and `details`, you can log them (carefully):
+
+- Prefer logging `status` + a backend-provided error code/message
+- Only log `details` if you know it’s safe/sanitized
+
+If you adopt a backend error format like `{ code, message }`, log `code` instead of entire bodies.
+
 ## Base URL: best practice (Next.js)
 
 In Next.js you usually have **two** scenarios.
