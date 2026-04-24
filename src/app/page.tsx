@@ -331,6 +331,27 @@ const topics = [
     category: "API",
   },
   {
+    title: "Auth flows — JWT, cookies, sessions",
+    description:
+      "Bearer vs httpOnly cookies, server-side sessions, refresh outline, XSS/CSRF reminders, and Next.js cookies/middleware snippets.",
+    href: "/studies/security/auth-flows",
+    category: "Authentication and security",
+  },
+  {
+    title: "OAuth 2.0 basics",
+    description:
+      "Delegated auth: roles, authorization code + PKCE, state and redirect URI, scopes, OIDC note, and callback/token sketches.",
+    href: "/studies/security/oauth-basics",
+    category: "Authentication and security",
+  },
+  {
+    title: "CSRF and XSS protection",
+    description:
+      "Forged cross-site requests vs script injection: SameSite and tokens, Origin checks, React escaping, dangerous sinks, and CSP.",
+    href: "/studies/security/csrf-xss",
+    category: "Authentication and security",
+  },
+  {
     title: "Next.js — server (overview)",
     description:
       "Hub for App Router server topics: where to read notes under next-server/ and jump into the server-side study.",
@@ -419,6 +440,13 @@ const topics = [
     description:
       "Run expensive work after input pauses; trailing vs leading, max wait, React cleanup, and fetch cancellation.",
     href: "/studies/performance-optimization/debouncing",
+    category: "Performance optimization",
+  },
+  {
+    title: "Image optimization (next/image)",
+    description:
+      "Next.js Image: lazy vs priority LCP, width/height and fill, sizes, placeholders, and remotePatterns for CDN URLs.",
+    href: "/studies/performance-optimization/next-image",
     category: "Performance optimization",
   },
 ] as const;

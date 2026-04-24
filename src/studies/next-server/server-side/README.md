@@ -83,6 +83,7 @@ Move **`"use client"`** as **far down** the tree as reasonable: keep data loadin
 
 ## Related studies in this repo
 
+- [Auth flows (JWT, cookies, sessions)](../../security/auth-flows/README.md) — cookies, sessions, Bearer tokens; ties to middleware and secrets.  
 - [SSR, SSG, and ISR](../rendering-ssr-ssg-isr/README.md) — classic terms mapped to App Router `fetch` + segment config.  
 - [Route Handlers](../route-handlers/README.md) — `route.ts` as `pages/api` replacement, GET/POST, `NextResponse`.  
 - [Edge vs Node.js runtime](../edge-vs-node-runtime/README.md) — `export const runtime`, Route Handlers, `fs` vs Edge.  

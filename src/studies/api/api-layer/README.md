@@ -201,6 +201,11 @@ Notes:
 - Don’t use `Math.random()`-style bases or hardcode `localhost` in code.
 - Keep endpoint paths consistent (`/v1/...`) and version your API when needed.
 
+## Related
+
+- [OAuth 2.0 basics](../../security/oauth-basics/README.md) — how **access tokens** are obtained before you attach them in the API client.  
+- [Auth flows (JWT, cookies, sessions)](../../security/auth-flows/README.md) — where to attach **Bearer** tokens vs **cookies** in clients and servers.
+
 ## Try it
 
 Run the app and open `/studies/api/api-layer`.

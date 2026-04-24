@@ -44,6 +44,10 @@ Typical use cases:
 | `HeavyWidget.tsx` | A deliberately “heavy-looking” client widget (simulated delay). |
 | `LazyWidgets.tsx` | Demonstrates `next/dynamic` and `React.lazy` patterns. |
 
+## Related in this repo
+
+- [Image optimization (next/image)](../next-image/README.md) — fewer bytes for above-the-fold UI complements code splitting.
+
 ## Try it
 
 Run the app and open `/studies/performance-optimization/code-splitting-lazy-loading`.

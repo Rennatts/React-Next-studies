@@ -71,6 +71,14 @@ Add new rows here when you create more topics.
 | Building an API layer | [`api/api-layer`](./api/api-layer/) | `/studies/api/api-layer` |
 | API layer with React Query | [`api/api-layer-react-query`](./api/api-layer-react-query/) | `/studies/api/api-layer-react-query` |
 
+## Authentication and security
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| Auth flows (JWT, cookies, sessions) | [`security/auth-flows`](./security/auth-flows/) | `/studies/security/auth-flows` |
+| OAuth 2.0 basics | [`security/oauth-basics`](./security/oauth-basics/) | `/studies/security/oauth-basics` |
+| CSRF and XSS protection | [`security/csrf-xss`](./security/csrf-xss/) | `/studies/security/csrf-xss` |
+
 ## Next.js (server)
 
 | Topic | Folder | Demo route |
@@ -93,3 +101,4 @@ Add new rows here when you create more topics.
 | Code splitting and lazy loading | [`performance-optimization/code-splitting-lazy-loading`](./performance-optimization/code-splitting-lazy-loading/) | `/studies/performance-optimization/code-splitting-lazy-loading` |
 | Throttling | [`performance-optimization/throttling`](./performance-optimization/throttling/) | `/studies/performance-optimization/throttling` |
 | Debouncing | [`performance-optimization/debouncing`](./performance-optimization/debouncing/) | `/studies/performance-optimization/debouncing` |
+| Image optimization (next/image) | [`performance-optimization/next-image`](./performance-optimization/next-image/) | `/studies/performance-optimization/next-image` |

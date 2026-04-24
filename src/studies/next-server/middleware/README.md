@@ -30,6 +30,7 @@ See **`MiddlewareExamples.tsx`** for `NextResponse.next`, `redirect`, `rewrite`,
 
 ## Related
 
+- [Auth flows (JWT, cookies, sessions)](../../security/auth-flows/README.md) — cookie-based sessions and middleware gates.  
 - [Edge vs Node.js runtime](../edge-vs-node-runtime/README.md) — Route Handlers choose `runtime`; middleware is Edge-only.  
 - [File-based routing](../file-based-routing/README.md) — URL segments; middleware matches **paths**, not file names.  
 - [Server-side in the App Router](../server-side/README.md) — data and auth often pair with middleware.
