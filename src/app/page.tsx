@@ -57,6 +57,13 @@ const topics = [
     href: "/studies/design-patterns/partial-components",
     category: "Design patterns",
   },
+  {
+    title: "Compound components",
+    description:
+      "Parent provides state via context; subcomponents (Trigger/Panel/etc) compose the UI structure.",
+    href: "/studies/design-patterns/compound-components",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
