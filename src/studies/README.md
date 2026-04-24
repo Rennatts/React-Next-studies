@@ -64,6 +64,13 @@ Add new rows here when you create more topics.
 | Building an API layer | [`api/api-layer`](./api/api-layer/) | `/studies/api/api-layer` |
 | API layer with React Query | [`api/api-layer-react-query`](./api/api-layer-react-query/) | `/studies/api/api-layer-react-query` |
 
+## Next.js (server)
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| Overview (topic list) | [`next-server`](./next-server/) | `/studies/next-server` |
+| Server-side in the App Router | [`next-server/server-side`](./next-server/server-side/) | `/studies/next-server/server-side` |
+
 ## Performance optimization
 
 | Topic | Folder | Demo route |

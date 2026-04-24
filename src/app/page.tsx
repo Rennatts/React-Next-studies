@@ -282,6 +282,20 @@ const topics = [
     category: "API",
   },
   {
+    title: "Next.js — server (overview)",
+    description:
+      "Hub for App Router server topics: where to read notes under next-server/ and jump into the server-side study.",
+    href: "/studies/next-server",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Next.js — server-side in the App Router",
+    description:
+      "Server Components default, async RSC, fetch caching and revalidate, dynamic APIs, Server Actions vs Route Handlers, secrets, and the client boundary.",
+    href: "/studies/next-server/server-side",
+    category: "Next.js (server)",
+  },
+  {
     title: "Code splitting and lazy loading",
     description:
       "Performance optimization: split bundles and lazy-load heavy UI with next/dynamic and React.lazy + Suspense.",
