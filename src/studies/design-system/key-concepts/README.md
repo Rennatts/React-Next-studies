@@ -40,7 +40,7 @@ Components expose a **stable API**: props, slots (`children`, `startIcon`), and 
 
 ## Layout, density, and grid
 
-**Layout** concepts—breakpoints, columns, gutters—often live partly in **tokens** (spacing) and partly in **layout primitives** (`Stack`, `Inline`, `Grid`). **Density** (comfortable vs compact) may be a theme dimension that adjusts spacing and touch targets without forking every component.
+**Layout** concepts—breakpoints, columns, gutters—often live partly in **tokens** (spacing) and partly in **layout primitives** (`Stack`, `Inline`, `Grid`). **Density** (comfortable vs compact) may be a theme dimension that adjusts spacing and touch targets without forking every component. For concrete patterns—**structural layers**, **split** toolbars/rows, **column** gutters, **grid** (2D gaps and layout grids), **inline** (typographic flow), and **inline-bundle** chip/icon clusters—see [Spacing patterns](../spacing-patterns/README.md).
 
 ## Patterns
 
@@ -89,4 +89,5 @@ Accessibility is a **cross-cutting concept**: token contrast, focus rings, compo
 - [Mistakes to avoid](../mistakes-to-avoid/README.md) — anti-patterns that undermine tokens, docs, and workflow
 - [Reusability and encapsulating styles](../reusability-and-styles/README.md) — component APIs and scoped styling in practice
 - [Style composition](../style-composition/README.md) — layering tokens, utilities, and variants
+- [Spacing patterns](../spacing-patterns/README.md) — layers, split, columns, grid, inline, inline-bundle, semantic spacing roles
 - [Example: Button](../button-example/README.md) — how one primitive is documented end-to-end

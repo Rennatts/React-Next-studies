@@ -59,3 +59,4 @@ Encourage **new tokens or variants** when a composition repeats, instead of one-
 - [Key concepts](../key-concepts/README.md) — tokens and components in the wider system  
 - [Example: Button](../button-example/README.md) — variants and states as a composed API  
 - [Composition pattern (React)](../../design-patterns/composition-components/README.md) — structural composition of components  
+- [Spacing patterns](../spacing-patterns/README.md) — layers, split, columns, grid, inline, inline-bundle, token roles for space  

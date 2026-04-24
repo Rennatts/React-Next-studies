@@ -128,6 +128,13 @@ const topics = [
     category: "Design system",
   },
   {
+    title: "Design system — spacing patterns",
+    description:
+      "Layers, split, columns, grid, inline (line-box, baseline), and inline-bundle (flex gap); semantic tokens; when to use stack vs grid vs typographic inline.",
+    href: "/studies/design-system/spacing-patterns",
+    category: "Design system",
+  },
+  {
     title: "Design system — audience",
     description:
       "Who the system serves: designers, engineers, content and a11y, PMs, QA, leadership, end users, and how docs should meet them.",

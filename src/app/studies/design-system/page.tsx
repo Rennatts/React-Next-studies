@@ -75,6 +75,18 @@ export default function DesignSystemOverviewPage() {
           >
             style composition
           </Link>
+          . For <strong className="text-zinc-900 dark:text-zinc-100">spacing</strong>—layered roles,{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">split</strong> toolbars/rows,{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">column</strong> gutters,{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">grid</strong> (2D layout rhythm),{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">inline</strong> (line-box), and{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">inline-bundle</strong> clusters—see{" "}
+          <Link
+            href="/studies/design-system/spacing-patterns"
+            className="font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"
+          >
+            spacing patterns
+          </Link>
           .
         </p>
       </article>
@@ -141,6 +153,14 @@ export default function DesignSystemOverviewPage() {
               className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
             >
               Style composition →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/design-system/spacing-patterns"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Spacing patterns →
             </Link>
           </li>
           <li>

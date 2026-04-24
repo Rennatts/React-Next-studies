@@ -31,6 +31,7 @@ Add new rows here when you create more topics.
 | Key concepts | [`design-system/key-concepts`](./design-system/key-concepts/) | `/studies/design-system/key-concepts` |
 | Reusability and encapsulating styles | [`design-system/reusability-and-styles`](./design-system/reusability-and-styles/) | `/studies/design-system/reusability-and-styles` |
 | Style composition | [`design-system/style-composition`](./design-system/style-composition/) | `/studies/design-system/style-composition` |
+| Spacing patterns | [`design-system/spacing-patterns`](./design-system/spacing-patterns/) | `/studies/design-system/spacing-patterns` |
 | Audience | [`design-system/audience`](./design-system/audience/) | `/studies/design-system/audience` |
 | Design phase checklist | [`design-system/design-phase-checklist`](./design-system/design-phase-checklist/) | `/studies/design-system/design-phase-checklist` |
 | Development checklist | [`design-system/development-checklist`](./design-system/development-checklist/) | `/studies/design-system/development-checklist` |

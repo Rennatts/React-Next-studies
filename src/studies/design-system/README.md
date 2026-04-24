@@ -47,6 +47,7 @@ In this repo, **design patterns** (container/presentational, compound components
 - **[Key concepts](./key-concepts/README.md)** — foundations, tokens, components vs patterns, docs, theming, versioning, a11y, governance.
 - **[Reusability and encapsulating styles](./reusability-and-styles/README.md)** — reusable primitives, stable APIs, scoped CSS approaches, tokens vs leakage.
 - **[Style composition](./style-composition/README.md)** — composing tokens, layers, utilities, and variants; slots; anti-patterns vs encapsulation.
+- **[Spacing patterns](./spacing-patterns/README.md)** — spacing as documented patterns: **layers**, **split**, **columns** (gutters), **grid** (2D rhythm), **inline** (line-box / text-adjacent), and **inline-bundle** (flex clusters with `gap`).
 - **[Audience](./audience/README.md)** — designers, engineers, content, a11y, PM, QA, leadership, end users; how to serve them in docs.
 - **[Design phase checklist](./design-phase-checklist/README.md)** — gate design before handoff: a11y, interaction, context, completion, content, customization, resolution, consistency, performance.
 - **[Development checklist](./development-checklist/README.md)** — gate implementation: responsiveness, errors, validation, browsers, a11y in code, performance, security, testing, i18n, observability.
