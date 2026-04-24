@@ -113,6 +113,13 @@ const topics = [
     href: "/studies/advanced-concepts/use-id",
     category: "Advanced concepts",
   },
+  {
+    title: "useCallback as ref",
+    description:
+      "Callback refs let you capture DOM nodes on mount/unmount; memoize with useCallback to keep ref identity stable.",
+    href: "/studies/advanced-concepts/use-callback-ref",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {

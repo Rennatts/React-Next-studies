@@ -29,3 +29,4 @@ Add new rows here when you create more topics.
 | Event listeners | [`advanced-concepts/event-listeners`](./advanced-concepts/event-listeners/) | `/studies/advanced-concepts/event-listeners` |
 | useLayoutEffect | [`advanced-concepts/use-layout-effect`](./advanced-concepts/use-layout-effect/) | `/studies/advanced-concepts/use-layout-effect` |
 | useId | [`advanced-concepts/use-id`](./advanced-concepts/use-id/) | `/studies/advanced-concepts/use-id` |
+| useCallback as ref (callback refs) | [`advanced-concepts/use-callback-ref`](./advanced-concepts/use-callback-ref/) | `/studies/advanced-concepts/use-callback-ref` |
