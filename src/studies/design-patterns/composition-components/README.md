@@ -58,6 +58,7 @@ We implement a small `Card` that accepts:
 | File | Role |
 |------|------|
 | `Card.tsx` | The composable UI building block. |
+| `Tabs.tsx` | A “compound components” example: `Tabs`, `TabsTrigger`, `TabsPanel`. |
 | `CompositionDemo.tsx` | Shows different ways to assemble the card. |
 
 ## Try it

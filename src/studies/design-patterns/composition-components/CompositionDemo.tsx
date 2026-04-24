@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Card } from "./Card";
+import { Tabs, TabsList, TabsPanel, TabsTrigger } from "./Tabs";
 
 export function CompositionDemo() {
   const [enabled, setEnabled] = useState(true);
@@ -57,6 +58,52 @@ export function CompositionDemo() {
           <li>Swap the footer content freely.</li>
           <li>Keep the component generic and reusable.</li>
         </ul>
+      </Card>
+
+      <Card
+        header={
+          <div className="space-y-1">
+            <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+              Compound components (composition)
+            </p>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              The parent composes <code className="rounded bg-zinc-100 px-1 py-0.5 text-[11px] dark:bg-zinc-900">Tabs</code>{" "}
+              from small parts.
+            </p>
+          </div>
+        }
+      >
+        <Tabs defaultValue="why">
+          <TabsList>
+            <TabsTrigger value="why">Why</TabsTrigger>
+            <TabsTrigger value="how">How</TabsTrigger>
+            <TabsTrigger value="when">When</TabsTrigger>
+          </TabsList>
+
+          <div className="mt-3 space-y-3">
+            <TabsPanel value="why">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                Compound components are a composition style where a parent
+                controls shared state (via context) and children declare the UI
+                structure.
+              </p>
+            </TabsPanel>
+            <TabsPanel value="how">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                <span className="font-medium">Tabs</span> provides context,{" "}
+                <span className="font-medium">Triggers</span> update it, and{" "}
+                <span className="font-medium">Panels</span> render based on the
+                current value.
+              </p>
+            </TabsPanel>
+            <TabsPanel value="when">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">
+                Use this when you want a flexible API that lets callers arrange
+                the parts freely while the component manages internal wiring.
+              </p>
+            </TabsPanel>
+          </div>
+        </Tabs>
       </Card>
     </div>
   );
