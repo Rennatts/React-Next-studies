@@ -30,3 +30,4 @@ Add new rows here when you create more topics.
 | useLayoutEffect | [`advanced-concepts/use-layout-effect`](./advanced-concepts/use-layout-effect/) | `/studies/advanced-concepts/use-layout-effect` |
 | useId | [`advanced-concepts/use-id`](./advanced-concepts/use-id/) | `/studies/advanced-concepts/use-id` |
 | useCallback as ref (callback refs) | [`advanced-concepts/use-callback-ref`](./advanced-concepts/use-callback-ref/) | `/studies/advanced-concepts/use-callback-ref` |
+| useDeferredValue | [`advanced-concepts/use-deferred-value`](./advanced-concepts/use-deferred-value/) | `/studies/advanced-concepts/use-deferred-value` |

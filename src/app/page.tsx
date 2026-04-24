@@ -120,6 +120,13 @@ const topics = [
     href: "/studies/advanced-concepts/use-callback-ref",
     category: "Advanced concepts",
   },
+  {
+    title: "useDeferredValue",
+    description:
+      "Defer expensive derived UI so typing stays responsive; filter large lists using a deferred query.",
+    href: "/studies/advanced-concepts/use-deferred-value",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
