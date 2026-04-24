@@ -24,3 +24,4 @@ Add new rows here when you create more topics.
 | Topic | Folder | Demo route |
 |-------|--------|------------|
 | React portals | [`advanced-concepts/react-portals`](./advanced-concepts/react-portals/) | `/studies/advanced-concepts/react-portals` |
+| Error boundaries | [`advanced-concepts/error-boundaries`](./advanced-concepts/error-boundaries/) | `/studies/advanced-concepts/error-boundaries` |

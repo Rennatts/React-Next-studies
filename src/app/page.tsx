@@ -78,6 +78,13 @@ const topics = [
     href: "/studies/advanced-concepts/react-portals",
     category: "Advanced concepts",
   },
+  {
+    title: "Error boundaries",
+    description:
+      "Catch render-time errors in part of the tree and render a fallback UI instead of crashing the whole page.",
+    href: "/studies/advanced-concepts/error-boundaries",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
