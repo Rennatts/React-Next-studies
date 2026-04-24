@@ -37,6 +37,45 @@ To keep this runnable, we also add a small **Route Handler** endpoint:
 - **`endpoints`**: `getProducts()`, `createOrder()`, etc. (one function per endpoint)
 - **`hooks` (optional)**: `useProductsQuery()` built on top (or use TanStack Query)
 
+## Base URL: best practice (Next.js)
+
+In Next.js you usually have **two** scenarios.
+
+### 1) Calling your own app’s API routes from the browser (same origin)
+
+Use **relative URLs** like:
+
+- `/api/studies/products`
+
+This is the simplest and most robust option:
+
+- Works in dev/prod without configuration
+- Avoids CORS issues
+- Automatically targets the current origin
+
+In this repo, the API client defaults to this (base URL is an empty string).
+
+### 2) Calling an external API (different origin)
+
+Centralize the base URL in one place and load it from environment variables.
+
+Recommended approach:
+
+- **Client**: `NEXT_PUBLIC_API_BASE_URL` (must be public to be bundled)
+- **Server**: `API_BASE_URL` (server-only)
+
+Then have your API client build full URLs with a helper like `buildUrl("/v1/users")`.
+
+This repo’s `apiClient.ts` exports:
+
+- `API_BASE_URL` (resolved from the right env var depending on server vs browser)
+- `buildUrl(path)` (joins base + path safely)
+
+Notes:
+
+- Don’t use `Math.random()`-style bases or hardcode `localhost` in code.
+- Keep endpoint paths consistent (`/v1/...`) and version your API when needed.
+
 ## Try it
 
 Run the app and open `/studies/api/api-layer`.

@@ -7,6 +7,22 @@ type RequestOptions = {
   signal?: AbortSignal;
 };
 
+/**
+ * Base URL strategy:
+ * - Same-origin browser calls: keep it relative (base = "").
+ * - External API: set `NEXT_PUBLIC_API_BASE_URL` (client) and/or `API_BASE_URL` (server).
+ */
+export const API_BASE_URL =
+  (typeof window === "undefined"
+    ? process.env.API_BASE_URL
+    : process.env.NEXT_PUBLIC_API_BASE_URL) ?? "";
+
+export function buildUrl(path: string) {
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  if (API_BASE_URL.length === 0) return path;
+  return `${API_BASE_URL.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+}
+
 function getErrorMessage(data: unknown): string | undefined {
   if (data && typeof data === "object" && "message" in data) {
     const msg = (data as { message?: unknown }).message;
@@ -26,7 +42,7 @@ async function readJsonSafe(res: Response): Promise<unknown | undefined> {
 }
 
 export async function requestJson<T>(url: string, opts: RequestOptions = {}): Promise<T> {
-  const res = await fetch(url, {
+  const res = await fetch(buildUrl(url), {
     method: opts.method ?? "GET",
     headers: {
       "content-type": "application/json",
