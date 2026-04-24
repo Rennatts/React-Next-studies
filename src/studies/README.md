@@ -18,3 +18,9 @@ Topics live under `src/studies/<category>/<topic>/`. Each folder should contain 
 | Observer pattern | [`design-patterns/observer-pattern`](./design-patterns/observer-pattern/) | `/studies/design-patterns/observer-pattern` |
 
 Add new rows here when you create more topics.
+
+## Advanced concepts
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| React portals | [`advanced-concepts/react-portals`](./advanced-concepts/react-portals/) | `/studies/advanced-concepts/react-portals` |

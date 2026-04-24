@@ -71,6 +71,13 @@ const topics = [
     href: "/studies/design-patterns/observer-pattern",
     category: "Design patterns",
   },
+  {
+    title: "React portals",
+    description:
+      "Advanced concept: render modals/overlays into document.body using createPortal (without breaking React events).",
+    href: "/studies/advanced-concepts/react-portals",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
