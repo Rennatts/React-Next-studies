@@ -33,6 +33,16 @@ A **runnable** version (async component + `fetch` + `next.revalidate`) lives in 
 
 Treat these as **part of your server data contract**, not “just fetch”: they affect build output, CDN behavior, and staleness.
 
+## SSR, SSG, and ISR (terminology)
+
+Those labels come from the **Pages Router** but still describe behaviors in the **App Router**:
+
+- **SSR** → **dynamic** rendering (per-request HTML/RSC), e.g. `cache: 'no-store'`, `dynamic = 'force-dynamic'`, or `cookies()` / `headers()`.
+- **SSG** → **static** prerender / long-lived cache, e.g. default cached `fetch`, `dynamic = 'force-static'`, `generateStaticParams`.
+- **ISR** → **time-based revalidation**, e.g. `fetch(..., { next: { revalidate: N } })` or `export const revalidate = N`.
+
+A focused map and copy-paste patterns live in **[SSR, SSG, and ISR](../rendering-ssr-ssg-isr/README.md)**; the runnable **`next: { revalidate: 60 }`** example stays in [`ServerSideRscFetchDemo.tsx`](./ServerSideRscFetchDemo.tsx) on the [server-side study page](/studies/next-server/server-side).
+
 ## Dynamic rendering signals
 
 Using certain APIs forces **dynamic** rendering for the route (or segment), for example:
@@ -73,6 +83,7 @@ Move **`"use client"`** as **far down** the tree as reasonable: keep data loadin
 
 ## Related studies in this repo
 
+- [SSR, SSG, and ISR](../rendering-ssr-ssg-isr/README.md) — classic terms mapped to App Router `fetch` + segment config.  
 - [Route Handlers](../route-handlers/README.md) — `route.ts` as `pages/api` replacement, GET/POST, `NextResponse`.  
 - [Edge vs Node.js runtime](../edge-vs-node-runtime/README.md) — `export const runtime`, Route Handlers, `fs` vs Edge.  
 - [Middleware](../middleware/README.md) — `src/middleware.ts`, matcher, headers for matched study routes.  

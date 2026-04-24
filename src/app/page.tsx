@@ -373,6 +373,13 @@ const topics = [
     category: "Next.js (server)",
   },
   {
+    title: "Next.js — SSR, SSG, and ISR",
+    description:
+      "Classic rendering modes mapped to App Router: dynamic vs static, fetch cache and revalidate, generateStaticParams.",
+    href: "/studies/next-server/rendering-ssr-ssg-isr",
+    category: "Next.js (server)",
+  },
+  {
     title: "Next.js — server-side in the App Router",
     description:
       "Server Components default, async RSC, fetch caching and revalidate, dynamic APIs, Server Actions vs Route Handlers, secrets, and the client boundary.",

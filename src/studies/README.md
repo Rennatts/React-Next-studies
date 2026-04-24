@@ -81,6 +81,7 @@ Add new rows here when you create more topics.
 | Middleware (Next.js) | [`next-server/middleware`](./next-server/middleware/) | `/studies/next-server/middleware` |
 | Edge vs Node.js runtime | [`next-server/edge-vs-node-runtime`](./next-server/edge-vs-node-runtime/) | `/studies/next-server/edge-vs-node-runtime` |
 | Route Handlers (API routes) | [`next-server/route-handlers`](./next-server/route-handlers/) | `/studies/next-server/route-handlers` |
+| SSR, SSG, and ISR | [`next-server/rendering-ssr-ssg-isr`](./next-server/rendering-ssr-ssg-isr/) | `/studies/next-server/rendering-ssr-ssg-isr` |
 | Server-side in the App Router | [`next-server/server-side`](./next-server/server-side/) | `/studies/next-server/server-side` |
 | React Server Components | [`next-server/server-components`](./next-server/server-components/) | `/studies/next-server/server-components` |
 | Suspense for data fetching (Next.js) | [`next-server/suspense-data-fetching`](./next-server/suspense-data-fetching/) | `/studies/next-server/suspense-data-fetching` |

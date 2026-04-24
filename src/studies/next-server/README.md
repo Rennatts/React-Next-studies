@@ -11,6 +11,7 @@ Notes in this folder focus on the **Next.js App Router**: **file-based routing**
 | Middleware | [`middleware`](./middleware/README.md) | `/studies/next-server/middleware` |
 | Edge vs Node.js runtime | [`edge-vs-node-runtime`](./edge-vs-node-runtime/README.md) | `/studies/next-server/edge-vs-node-runtime` |
 | Route Handlers | [`route-handlers`](./route-handlers/README.md) | `/studies/next-server/route-handlers` |
+| SSR, SSG, and ISR | [`rendering-ssr-ssg-isr`](./rendering-ssr-ssg-isr/README.md) | `/studies/next-server/rendering-ssr-ssg-isr` |
 | Server-side in the App Router | [`server-side`](./server-side/README.md) (notes + [`ServerSideRscFetchDemo.tsx`](./server-side/ServerSideRscFetchDemo.tsx)) | `/studies/next-server/server-side` |
 | React Server Components | [`server-components`](./server-components/README.md) | `/studies/next-server/server-components` |
 | Suspense for data fetching (Next.js) | [`suspense-data-fetching`](./suspense-data-fetching/README.md) | `/studies/next-server/suspense-data-fetching` |

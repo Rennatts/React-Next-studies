@@ -82,6 +82,14 @@ export default function NextServerOverviewPage() {
           </li>
           <li>
             <Link
+              href="/studies/next-server/rendering-ssr-ssg-isr"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              SSR, SSG, and ISR →
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/studies/next-server/server-side"
               className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
             >
