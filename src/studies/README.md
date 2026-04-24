@@ -19,6 +19,23 @@ Topics live under `src/studies/<category>/<topic>/`. Each folder should contain 
 
 Add new rows here when you create more topics.
 
+## Design system
+
+| Topic | Folder | Study route |
+|-------|--------|-------------|
+| What is a design system? (overview) | [`design-system`](./design-system/) | `/studies/design-system` |
+| Why a design system matters | [`design-system/importance`](./design-system/importance/) | `/studies/design-system/importance` |
+| Downsides and trade-offs | [`design-system/downsides`](./design-system/downsides/) | `/studies/design-system/downsides` |
+| Mistakes to avoid | [`design-system/mistakes-to-avoid`](./design-system/mistakes-to-avoid/) | `/studies/design-system/mistakes-to-avoid` |
+| Core principles | [`design-system/core-principles`](./design-system/core-principles/) | `/studies/design-system/core-principles` |
+| Key concepts | [`design-system/key-concepts`](./design-system/key-concepts/) | `/studies/design-system/key-concepts` |
+| Reusability and encapsulating styles | [`design-system/reusability-and-styles`](./design-system/reusability-and-styles/) | `/studies/design-system/reusability-and-styles` |
+| Audience | [`design-system/audience`](./design-system/audience/) | `/studies/design-system/audience` |
+| Design phase checklist | [`design-system/design-phase-checklist`](./design-system/design-phase-checklist/) | `/studies/design-system/design-phase-checklist` |
+| Development checklist | [`design-system/development-checklist`](./design-system/development-checklist/) | `/studies/design-system/development-checklist` |
+| Example: Button component | [`design-system/button-example`](./design-system/button-example/) | `/studies/design-system/button-example` |
+| Team structure | [`design-system/team-structure`](./design-system/team-structure/) | `/studies/design-system/team-structure` |
+
 ## Advanced concepts
 
 | Topic | Folder | Demo route |

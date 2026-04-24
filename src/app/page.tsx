@@ -72,6 +72,90 @@ const topics = [
     category: "Design patterns",
   },
   {
+    title: "What is a design system?",
+    description:
+      "Foundations, tokens, components, patterns, and process—why a system is more than a Figma kit or component library.",
+    href: "/studies/design-system",
+    category: "Design system",
+  },
+  {
+    title: "Why a design system matters",
+    description:
+      "User trust, shipping speed, brand and a11y at scale, lower cost of change—and what goes wrong without a shared system.",
+    href: "/studies/design-system/importance",
+    category: "Design system",
+  },
+  {
+    title: "Design system — downsides and trade-offs",
+    description:
+      "Ownership cost, rigidity, adoption friction, upgrade tax, central bottlenecks, and when ROI is weak—plus mitigation.",
+    href: "/studies/design-system/downsides",
+    category: "Design system",
+  },
+  {
+    title: "Design system — mistakes to avoid",
+    description:
+      "Anti-patterns: build-for-scale-first, workshops without a kit, no workflow or ADRs, perfectionism, Figma/code drift, skipping tokens, weak ownership, vanity metrics.",
+    href: "/studies/design-system/mistakes-to-avoid",
+    category: "Design system",
+  },
+  {
+    title: "Design system — core principles",
+    description:
+      "Single source of truth, consistency, accessibility, composability, documentation as product, and living evolution.",
+    href: "/studies/design-system/core-principles",
+    category: "Design system",
+  },
+  {
+    title: "Design system — key concepts",
+    description:
+      "Foundations, tokens, components vs patterns, documentation, theming, semver, accessibility shift-left, governance.",
+    href: "/studies/design-system/key-concepts",
+    category: "Design system",
+  },
+  {
+    title: "Design system — reusability & encapsulated styles",
+    description:
+      "Reusable primitives and public APIs; CSS Modules, utilities, CSS-in-JS, Shadow DOM; tokens; avoiding global style leakage.",
+    href: "/studies/design-system/reusability-and-styles",
+    category: "Design system",
+  },
+  {
+    title: "Design system — audience",
+    description:
+      "Who the system serves: designers, engineers, content and a11y, PMs, QA, leadership, end users, and how docs should meet them.",
+    href: "/studies/design-system/audience",
+    category: "Design system",
+  },
+  {
+    title: "Design system — design phase checklist",
+    description:
+      "Know if design is ready for handoff: a11y, interaction, context, completion, content, customization, resolution, DS consistency, performance.",
+    href: "/studies/design-system/design-phase-checklist",
+    category: "Design system",
+  },
+  {
+    title: "Design system — development checklist",
+    description:
+      "Pre-merge/release gate: responsive layout, errors, client+server validation, browsers, a11y in code, perf, security, tests, i18n, observability.",
+    href: "/studies/design-system/development-checklist",
+    category: "Design system",
+  },
+  {
+    title: "Design system — Button (real-life doc)",
+    description:
+      "Document a Button like production DS docs: overview, variants, sizes, states, a11y, API table, do/don’t, plus SystemButton demo.",
+    href: "/studies/design-system/button-example",
+    category: "Design system",
+  },
+  {
+    title: "Design system — team structure",
+    description:
+      "Core platform roles, contributor guilds, centralized vs federated models, decision rights, and squad handoffs.",
+    href: "/studies/design-system/team-structure",
+    category: "Design system",
+  },
+  {
     title: "React portals",
     description:
       "Advanced concept: render modals/overlays into document.body using createPortal (without breaking React events).",
