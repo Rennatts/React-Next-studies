@@ -42,6 +42,46 @@ export default function NextServerOverviewPage() {
         <ul className="space-y-2">
           <li>
             <Link
+              href="/studies/next-server/file-based-routing"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              File-based routing (App Router) →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/next-server/layouts-and-nested-layouts"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Layouts and nested layouts →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/next-server/middleware"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Middleware →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/next-server/edge-vs-node-runtime"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Edge vs Node.js runtime →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/next-server/route-handlers"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Route Handlers →
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/studies/next-server/server-side"
               className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
             >

@@ -31,6 +31,7 @@ Keep **large regions server-rendered**; push **`"use client"`** to **small islan
 
 ## Related
 
+- [File-based routing (App Router)](../file-based-routing/README.md) — how `app/` maps to URLs and special files.  
 - [Server-side in the App Router](../server-side/README.md) — `fetch` caching, dynamic APIs, Server Actions, Route Handlers in depth.  
 - [Suspense for data fetching](../suspense-data-fetching/README.md) — streaming async RSC.
 

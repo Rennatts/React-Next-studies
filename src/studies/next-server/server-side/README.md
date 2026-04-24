@@ -73,6 +73,11 @@ Move **`"use client"`** as **far down** the tree as reasonable: keep data loadin
 
 ## Related studies in this repo
 
+- [Route Handlers](../route-handlers/README.md) — `route.ts` as `pages/api` replacement, GET/POST, `NextResponse`.  
+- [Edge vs Node.js runtime](../edge-vs-node-runtime/README.md) — `export const runtime`, Route Handlers, `fs` vs Edge.  
+- [Middleware](../middleware/README.md) — `src/middleware.ts`, matcher, headers for matched study routes.  
+- [Layouts and nested layouts](../layouts-and-nested-layouts/README.md) — real `layout.tsx` nesting under this repo’s study routes.  
+- [File-based routing (App Router)](../file-based-routing/README.md) — `app/` segments, `page`, `layout`, `route.ts`, dynamic routes.
 - [React Server Components](../server-components/README.md) — default server vs `"use client"`, composition, small demos.
 - [Suspense for data fetching (Next.js)](../suspense-data-fetching/README.md) — parallel / nested Suspense with async RSC and `loading.tsx`.
 - [Async App Router rendering](../../advanced-concepts/async-react-router/README.md) — streaming, `loading.tsx`, Suspense.

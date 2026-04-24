@@ -338,6 +338,41 @@ const topics = [
     category: "Next.js (server)",
   },
   {
+    title: "Next.js — file-based routing (App Router)",
+    description:
+      "How app/ maps to URLs: page, layout, loading, error, route handlers, dynamic segments, route groups, and metadata.",
+    href: "/studies/next-server/file-based-routing",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Next.js — layouts and nested layouts",
+    description:
+      "layout.tsx nesting, shared chrome and {children}, template vs layout, plus live sky/amber strips and a nested-demo route.",
+    href: "/studies/next-server/layouts-and-nested-layouts",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Next.js — middleware",
+    description:
+      "Edge middleware.ts, matcher, NextResponse, redirects/rewrites, request headers; live headers on the study route.",
+    href: "/studies/next-server/middleware",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Next.js — Edge vs Node.js runtime",
+    description:
+      "Segment runtime config, Route Handlers on Edge vs Node, fs on Node only, live probe-edge and probe-node JSON.",
+    href: "/studies/next-server/edge-vs-node-runtime",
+    category: "Next.js (server)",
+  },
+  {
+    title: "Next.js — Route Handlers",
+    description:
+      "App Router route.ts: GET/POST, dynamic params, NextResponse.json; live demos and Pages Router migration notes.",
+    href: "/studies/next-server/route-handlers",
+    category: "Next.js (server)",
+  },
+  {
     title: "Next.js — server-side in the App Router",
     description:
       "Server Components default, async RSC, fetch caching and revalidate, dynamic APIs, Server Actions vs Route Handlers, secrets, and the client boundary.",

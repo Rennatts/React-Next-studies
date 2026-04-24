@@ -40,6 +40,10 @@ We simulate a slow server fetch and show:
 | `mockServerFetch.ts` | Fake async data with delays. |
 | `AsyncRouteDemo.tsx` | Server Components that await and stream. |
 
+## Related
+
+- [File-based routing (App Router)](../../next-server/file-based-routing/README.md) — how `app/` folders and special files map to URLs.
+
 ## Try it
 
 Run the app and open `/studies/advanced-concepts/async-react-router`.

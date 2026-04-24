@@ -76,6 +76,11 @@ Add new rows here when you create more topics.
 | Topic | Folder | Demo route |
 |-------|--------|------------|
 | Overview (topic list) | [`next-server`](./next-server/) | `/studies/next-server` |
+| File-based routing (App Router) | [`next-server/file-based-routing`](./next-server/file-based-routing/) | `/studies/next-server/file-based-routing` |
+| Layouts and nested layouts | [`next-server/layouts-and-nested-layouts`](./next-server/layouts-and-nested-layouts/) | `/studies/next-server/layouts-and-nested-layouts` |
+| Middleware (Next.js) | [`next-server/middleware`](./next-server/middleware/) | `/studies/next-server/middleware` |
+| Edge vs Node.js runtime | [`next-server/edge-vs-node-runtime`](./next-server/edge-vs-node-runtime/) | `/studies/next-server/edge-vs-node-runtime` |
+| Route Handlers (API routes) | [`next-server/route-handlers`](./next-server/route-handlers/) | `/studies/next-server/route-handlers` |
 | Server-side in the App Router | [`next-server/server-side`](./next-server/server-side/) | `/studies/next-server/server-side` |
 | React Server Components | [`next-server/server-components`](./next-server/server-components/) | `/studies/next-server/server-components` |
 | Suspense for data fetching (Next.js) | [`next-server/suspense-data-fetching`](./next-server/suspense-data-fetching/) | `/studies/next-server/suspense-data-fetching` |
