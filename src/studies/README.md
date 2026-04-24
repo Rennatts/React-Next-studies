@@ -15,5 +15,6 @@ Topics live under `src/studies/<category>/<topic>/`. Each folder should contain 
 | Component composition | [`design-patterns/composition-components`](./design-patterns/composition-components/) | `/studies/design-patterns/composition-components` |
 | Partial components (partial props) | [`design-patterns/partial-components`](./design-patterns/partial-components/) | `/studies/design-patterns/partial-components` |
 | Compound components | [`design-patterns/compound-components`](./design-patterns/compound-components/) | `/studies/design-patterns/compound-components` |
+| Observer pattern | [`design-patterns/observer-pattern`](./design-patterns/observer-pattern/) | `/studies/design-patterns/observer-pattern` |
 
 Add new rows here when you create more topics.

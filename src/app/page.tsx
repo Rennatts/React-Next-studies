@@ -64,6 +64,13 @@ const topics = [
     href: "/studies/design-patterns/compound-components",
     category: "Design patterns",
   },
+  {
+    title: "Observer pattern",
+    description:
+      "Pub/sub subject-observer model; React subscription via useSyncExternalStore for external stores.",
+    href: "/studies/design-patterns/observer-pattern",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
