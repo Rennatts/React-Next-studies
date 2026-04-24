@@ -31,3 +31,4 @@ Add new rows here when you create more topics.
 | useId | [`advanced-concepts/use-id`](./advanced-concepts/use-id/) | `/studies/advanced-concepts/use-id` |
 | useCallback as ref (callback refs) | [`advanced-concepts/use-callback-ref`](./advanced-concepts/use-callback-ref/) | `/studies/advanced-concepts/use-callback-ref` |
 | useDeferredValue | [`advanced-concepts/use-deferred-value`](./advanced-concepts/use-deferred-value/) | `/studies/advanced-concepts/use-deferred-value` |
+| useTransition | [`advanced-concepts/use-transition`](./advanced-concepts/use-transition/) | `/studies/advanced-concepts/use-transition` |

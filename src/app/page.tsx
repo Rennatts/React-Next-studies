@@ -127,6 +127,13 @@ const topics = [
     href: "/studies/advanced-concepts/use-deferred-value",
     category: "Advanced concepts",
   },
+  {
+    title: "useTransition",
+    description:
+      "Mark expensive state updates as non-urgent with startTransition; show pending UI with isPending.",
+    href: "/studies/advanced-concepts/use-transition",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
