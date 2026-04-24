@@ -34,6 +34,7 @@ This study’s demo uses **picsum.photos**; see `next.config.mjs` in the repo ro
 ## Related in this repo
 
 - [Code splitting and lazy loading](../code-splitting-lazy-loading/README.md) — complementary bundle-size work.  
+- [Font optimization (next/font)](../font-optimization/README.md) — LCP often pairs image weight with font loading.  
 
 ## Further reading
 

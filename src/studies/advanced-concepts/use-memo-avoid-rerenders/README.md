@@ -40,6 +40,10 @@ Common combo:
 |------|------|
 | `UseMemoAvoidRerendersDemo.tsx` | Shows expensive derived list with/without `useMemo` + a memoized child. |
 
+## Related in this repo
+
+- [Avoiding unnecessary re-renders](../avoid-unnecessary-rerenders/README.md) — broader checklist: `React.memo`, prop identity, colocation, context.  
+
 ## Try it
 
 Run the app and open `/studies/advanced-concepts/use-memo-avoid-rerenders`.

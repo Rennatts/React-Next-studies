@@ -53,6 +53,7 @@ Add new rows here when you create more topics.
 | useCallback as ref (callback refs) | [`advanced-concepts/use-callback-ref`](./advanced-concepts/use-callback-ref/) | `/studies/advanced-concepts/use-callback-ref` |
 | useCallback (referential integrity) | [`advanced-concepts/use-callback-reference-integrity`](./advanced-concepts/use-callback-reference-integrity/) | `/studies/advanced-concepts/use-callback-reference-integrity` |
 | useMemo (avoid unnecessary work) | [`advanced-concepts/use-memo-avoid-rerenders`](./advanced-concepts/use-memo-avoid-rerenders/) | `/studies/advanced-concepts/use-memo-avoid-rerenders` |
+| Avoiding unnecessary re-renders | [`advanced-concepts/avoid-unnecessary-rerenders`](./advanced-concepts/avoid-unnecessary-rerenders/) | `/studies/advanced-concepts/avoid-unnecessary-rerenders` |
 | State vs props vs derived state | [`advanced-concepts/state-props-derived-state`](./advanced-concepts/state-props-derived-state/) | `/studies/advanced-concepts/state-props-derived-state` |
 | Composition vs inheritance | [`advanced-concepts/composition-vs-inheritance`](./advanced-concepts/composition-vs-inheritance/) | `/studies/advanced-concepts/composition-vs-inheritance` |
 | Lifting state up and colocation strategies | [`advanced-concepts/lifting-state-colocation-strategies`](./advanced-concepts/lifting-state-colocation-strategies/) | `/studies/advanced-concepts/lifting-state-colocation-strategies` |
@@ -102,3 +103,4 @@ Add new rows here when you create more topics.
 | Throttling | [`performance-optimization/throttling`](./performance-optimization/throttling/) | `/studies/performance-optimization/throttling` |
 | Debouncing | [`performance-optimization/debouncing`](./performance-optimization/debouncing/) | `/studies/performance-optimization/debouncing` |
 | Image optimization (next/image) | [`performance-optimization/next-image`](./performance-optimization/next-image/) | `/studies/performance-optimization/next-image` |
+| Font optimization (next/font) | [`performance-optimization/font-optimization`](./performance-optimization/font-optimization/) | `/studies/performance-optimization/font-optimization` |

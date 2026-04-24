@@ -247,6 +247,13 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "Avoiding unnecessary re-renders",
+    description:
+      "React.memo, stable props vs inline objects, colocation and context mindset; live tick vs accent with optional useMemo theme.",
+    href: "/studies/advanced-concepts/avoid-unnecessary-rerenders",
+    category: "Advanced concepts",
+  },
+  {
     title: "State vs props vs derived state",
     description:
       "Props as inputs, owned state, values derived at render, controlled fields, key reset for drafts, and redundant prop mirrors.",
@@ -447,6 +454,13 @@ const topics = [
     description:
       "Next.js Image: lazy vs priority LCP, width/height and fill, sizes, placeholders, and remotePatterns for CDN URLs.",
     href: "/studies/performance-optimization/next-image",
+    category: "Performance optimization",
+  },
+  {
+    title: "Font optimization (next/font)",
+    description:
+      "Self-hosted Google and local fonts: display swap, subsets, CSS variables, route layout vs colocated loaders.",
+    href: "/studies/performance-optimization/font-optimization",
     category: "Performance optimization",
   },
 ] as const;
