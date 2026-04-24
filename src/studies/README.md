@@ -12,5 +12,6 @@ Topics live under `src/studies/<category>/<topic>/`. Each folder should contain 
 | Custom hooks | [`design-patterns/custom-hooks`](./design-patterns/custom-hooks/) | `/studies/design-patterns/custom-hooks` |
 | Functional programming in React | [`design-patterns/functional-programming`](./design-patterns/functional-programming/) | `/studies/design-patterns/functional-programming` |
 | Recursive components (tree rendering) | [`design-patterns/recursive-components`](./design-patterns/recursive-components/) | `/studies/design-patterns/recursive-components` |
+| Component composition | [`design-patterns/composition-components`](./design-patterns/composition-components/) | `/studies/design-patterns/composition-components` |
 
 Add new rows here when you create more topics.

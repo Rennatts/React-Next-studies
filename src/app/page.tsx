@@ -43,6 +43,13 @@ const topics = [
     href: "/studies/design-patterns/recursive-components",
     category: "Design patterns",
   },
+  {
+    title: "Component composition",
+    description:
+      "Composition over inheritance: build flexible UI using children and slot-like props (header/actions/footer).",
+    href: "/studies/design-patterns/composition-components",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
