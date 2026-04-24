@@ -62,6 +62,12 @@ export default function DesignSystemCorePrinciplesPage() {
             Reuse & styles
           </Link>
           <Link
+            href="/studies/design-system/style-composition"
+            className="inline-flex text-sm font-medium text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
+          >
+            Style composition
+          </Link>
+          <Link
             href="/studies/design-system/audience"
             className="inline-flex text-sm font-medium text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
           >
@@ -131,6 +137,12 @@ export default function DesignSystemCorePrinciplesPage() {
           className="text-sm font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"
         >
           Mistakes to avoid →
+        </Link>
+        <Link
+          href="/studies/design-system/style-composition"
+          className="text-sm font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"
+        >
+          Style composition →
         </Link>
         <Link
           href="/studies/design-system/key-concepts"

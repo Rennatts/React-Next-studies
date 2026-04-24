@@ -38,6 +38,12 @@ export default function ReusabilityAndStylesPage() {
             Key concepts
           </Link>
           <Link
+            href="/studies/design-system/style-composition"
+            className="inline-flex text-sm font-medium text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
+          >
+            Style composition
+          </Link>
+          <Link
             href="/studies/design-patterns/composition-components"
             className="inline-flex text-sm font-medium text-zinc-700 underline-offset-4 hover:underline dark:text-zinc-300"
           >

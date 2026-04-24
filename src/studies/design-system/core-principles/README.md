@@ -44,4 +44,4 @@ Products change; the system **must change with them**—with deprecation paths, 
 
 ---
 
-**See also:** [What is a design system?](../README.md) · [Why a design system matters](../importance/README.md) · [Downsides and trade-offs](../downsides/README.md) · [Mistakes to avoid](../mistakes-to-avoid/README.md) · [Key concepts](../key-concepts/README.md) · [Reusability and encapsulating styles](../reusability-and-styles/README.md) · [Audience](../audience/README.md) · [Example: Button](../button-example/README.md) · [Team structure](../team-structure/README.md)
+**See also:** [What is a design system?](../README.md) · [Why a design system matters](../importance/README.md) · [Downsides and trade-offs](../downsides/README.md) · [Mistakes to avoid](../mistakes-to-avoid/README.md) · [Key concepts](../key-concepts/README.md) · [Reusability and encapsulating styles](../reusability-and-styles/README.md) · [Style composition](../style-composition/README.md) · [Audience](../audience/README.md) · [Example: Button](../button-example/README.md) · [Team structure](../team-structure/README.md)

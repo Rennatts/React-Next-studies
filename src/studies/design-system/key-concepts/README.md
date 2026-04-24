@@ -88,4 +88,5 @@ Accessibility is a **cross-cutting concept**: token contrast, focus rings, compo
 - [Development checklist](../development-checklist/README.md) — implementation readiness before release
 - [Mistakes to avoid](../mistakes-to-avoid/README.md) — anti-patterns that undermine tokens, docs, and workflow
 - [Reusability and encapsulating styles](../reusability-and-styles/README.md) — component APIs and scoped styling in practice
+- [Style composition](../style-composition/README.md) — layering tokens, utilities, and variants
 - [Example: Button](../button-example/README.md) — how one primitive is documented end-to-end

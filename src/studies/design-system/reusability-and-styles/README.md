@@ -4,6 +4,8 @@
 
 A design system succeeds when both work together: **reusable primitives** with **stable, scoped styling** and clear public APIs.
 
+For **stacking** tokens, layers, utilities, and variants without breaking those boundaries, see [Style composition](../style-composition/README.md).
+
 ## Reusability: what to reuse (and what not to)
 
 ### Reuse by default
@@ -58,6 +60,7 @@ Even without CSS Modules, **design tokens** encapsulate *meaning*: `color.action
 
 ## Relation to the rest of these notes
 
+- [Style composition](../style-composition/README.md) — how smaller style pieces combine inside a system  
 - [Key concepts](../key-concepts/README.md) — tokens and components in the bigger picture  
 - [Example: Button](../button-example/README.md) — a small reusable primitive with explicit variants  
 - [Core principles](../core-principles/README.md) — single source of truth and composability  

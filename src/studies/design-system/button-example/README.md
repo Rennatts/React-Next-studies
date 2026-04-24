@@ -105,5 +105,6 @@ Open `/studies/design-system/button-example` to see a minimal implementation and
 - [Development checklist](../development-checklist/README.md) — what to verify once components are implemented in the app
 - [Key concepts](../key-concepts/README.md) — tokens, components, patterns, and how they connect
 - [Reusability and encapsulating styles](../reusability-and-styles/README.md) — why primitives need stable APIs and scoped styles
+- [Style composition](../style-composition/README.md) — how variant/size combinations form a composed surface
 - [Audience](../audience/README.md) — who reads this style of documentation
 - [Core principles](../core-principles/README.md) — single source of truth, accessibility, documentation as product

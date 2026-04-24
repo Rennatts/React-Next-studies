@@ -68,6 +68,13 @@ export default function DesignSystemOverviewPage() {
           >
             reusability and encapsulating styles
           </Link>
+          ; for <strong className="text-zinc-900 dark:text-zinc-100">composing</strong> layers, tokens, and variants, see{" "}
+          <Link
+            href="/studies/design-system/style-composition"
+            className="font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"
+          >
+            style composition
+          </Link>
           .
         </p>
       </article>
@@ -126,6 +133,14 @@ export default function DesignSystemOverviewPage() {
               className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
             >
               Reusability and encapsulating styles →
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/studies/design-system/style-composition"
+              className="block rounded-xl border border-zinc-200 p-4 text-sm font-medium text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-700 dark:hover:bg-zinc-900/40"
+            >
+              Style composition →
             </Link>
           </li>
           <li>

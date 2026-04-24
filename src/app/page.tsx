@@ -121,6 +121,13 @@ const topics = [
     category: "Design system",
   },
   {
+    title: "Design system — style composition",
+    description:
+      "Compose tokens, cascade layers, Tailwind recipes, and variant maps; slots vs leakage; invalid variant pairs and a11y.",
+    href: "/studies/design-system/style-composition",
+    category: "Design system",
+  },
+  {
     title: "Design system — audience",
     description:
       "Who the system serves: designers, engineers, content and a11y, PMs, QA, leadership, end users, and how docs should meet them.",

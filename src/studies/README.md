@@ -30,6 +30,7 @@ Add new rows here when you create more topics.
 | Core principles | [`design-system/core-principles`](./design-system/core-principles/) | `/studies/design-system/core-principles` |
 | Key concepts | [`design-system/key-concepts`](./design-system/key-concepts/) | `/studies/design-system/key-concepts` |
 | Reusability and encapsulating styles | [`design-system/reusability-and-styles`](./design-system/reusability-and-styles/) | `/studies/design-system/reusability-and-styles` |
+| Style composition | [`design-system/style-composition`](./design-system/style-composition/) | `/studies/design-system/style-composition` |
 | Audience | [`design-system/audience`](./design-system/audience/) | `/studies/design-system/audience` |
 | Design phase checklist | [`design-system/design-phase-checklist`](./design-system/design-phase-checklist/) | `/studies/design-system/design-phase-checklist` |
 | Development checklist | [`design-system/development-checklist`](./design-system/development-checklist/) | `/studies/design-system/development-checklist` |
