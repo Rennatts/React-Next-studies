@@ -99,6 +99,13 @@ const topics = [
     href: "/studies/advanced-concepts/event-listeners",
     category: "Advanced concepts",
   },
+  {
+    title: "useLayoutEffect",
+    description:
+      "Measure/mutate layout before paint to avoid flicker; compare useEffect vs useLayoutEffect for DOM measurements.",
+    href: "/studies/advanced-concepts/use-layout-effect",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
