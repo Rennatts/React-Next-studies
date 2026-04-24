@@ -121,6 +121,34 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "useCallback (referential integrity)",
+    description:
+      "Keep stable function identities for React.memo children and hook dependency lists; avoid unnecessary re-renders.",
+    href: "/studies/advanced-concepts/use-callback-reference-integrity",
+    category: "Advanced concepts",
+  },
+  {
+    title: "useMemo (avoid unnecessary work)",
+    description:
+      "Memoize expensive derived values; pair with React.memo when stable props help skip child re-renders.",
+    href: "/studies/advanced-concepts/use-memo-avoid-rerenders",
+    category: "Advanced concepts",
+  },
+  {
+    title: "State collocation",
+    description:
+      "Keep state in the lowest owner that needs it so siblings do not re-render; lift only when sharing requires it.",
+    href: "/studies/advanced-concepts/state-collocation",
+    category: "Advanced concepts",
+  },
+  {
+    title: "Lift components up (re-renders)",
+    description:
+      "Put stateless chrome in a parent shell and state in a child so static UI does not re-render on each update.",
+    href: "/studies/advanced-concepts/lift-components-up",
+    category: "Advanced concepts",
+  },
+  {
     title: "useDeferredValue",
     description:
       "Defer expensive derived UI so typing stays responsive; filter large lists using a deferred query.",
@@ -154,6 +182,27 @@ const topics = [
       "Use TanStack Query on top of the API client to get caching, refetching, and better async state management.",
     href: "/studies/api/api-layer-react-query",
     category: "API",
+  },
+  {
+    title: "Code splitting and lazy loading",
+    description:
+      "Performance optimization: split bundles and lazy-load heavy UI with next/dynamic and React.lazy + Suspense.",
+    href: "/studies/performance-optimization/code-splitting-lazy-loading",
+    category: "Performance optimization",
+  },
+  {
+    title: "Throttling",
+    description:
+      "Rate-limit scroll, resize, and pointer handlers; throttle vs debounce, edges, and React listener patterns.",
+    href: "/studies/performance-optimization/throttling",
+    category: "Performance optimization",
+  },
+  {
+    title: "Debouncing",
+    description:
+      "Run expensive work after input pauses; trailing vs leading, max wait, React cleanup, and fetch cancellation.",
+    href: "/studies/performance-optimization/debouncing",
+    category: "Performance optimization",
   },
 ] as const;
 
