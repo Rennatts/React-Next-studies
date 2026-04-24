@@ -134,6 +134,13 @@ const topics = [
     href: "/studies/advanced-concepts/use-transition",
     category: "Advanced concepts",
   },
+  {
+    title: "Async App Router rendering",
+    description:
+      "Async Server Components, route loading.tsx, error.tsx, and streaming with Suspense in Next.js App Router.",
+    href: "/studies/advanced-concepts/async-react-router",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
