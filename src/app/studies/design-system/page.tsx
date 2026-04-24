@@ -80,7 +80,11 @@ export default function DesignSystemOverviewPage() {
           <strong className="text-zinc-900 dark:text-zinc-100">column</strong> gutters,{" "}
           <strong className="text-zinc-900 dark:text-zinc-100">grid</strong> (2D layout rhythm),{" "}
           <strong className="text-zinc-900 dark:text-zinc-100">inline</strong> (line-box), and{" "}
-          <strong className="text-zinc-900 dark:text-zinc-100">inline-bundle</strong> clusters—see{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">inline-bundle</strong> clusters,{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">pad</strong> (inset),{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">center</strong> (measure),{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">media-wrapper</strong> (img/video frames),{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">cover</strong> (viewport shell)—see{" "}
           <Link
             href="/studies/design-system/spacing-patterns"
             className="font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Study: Design system — spacing patterns",
   description:
-    "Spacing patterns: layers, split, columns, grid, inline (line-box, baseline, text-adjacent), inline-bundle (flex gap clusters)—when to use which.",
+    "Spacing patterns: layers through cover—viewport shells, flex-1 main, dvh, aspect frames, gap vs padding vs margin.",
 };
 
 export default function SpacingPatternsPage() {
@@ -28,8 +28,19 @@ export default function SpacingPatternsPage() {
           <strong className="text-zinc-900 dark:text-zinc-100">grid</strong> (2D gaps, layout grid vs CSS Grid),{" "}
           <strong className="text-zinc-900 dark:text-zinc-100">inline</strong> (typographic line-box flow), and{" "}
           <strong className="text-zinc-900 dark:text-zinc-100">inline-bundle</strong> (flex clusters with one{" "}
-          <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">gap</code>); more rhythm notes can
-          extend the same folder later.
+          <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">gap</code>,{" "}
+          <strong className="text-zinc-900 dark:text-zinc-100">pad</strong> (border-to-content inset,
+          symmetric vs squish), and <strong className="text-zinc-900 dark:text-zinc-100">center</strong>{" "}
+          (max-width + <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">mx-auto</code>
+          ){" "}
+          and <strong className="text-zinc-900 dark:text-zinc-100">media-wrapper</strong> (aspect
+          frame + <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">
+            object-fit
+          </code>
+          ){" "}
+          and <strong className="text-zinc-900 dark:text-zinc-100">cover</strong> (min-height shell
+          with <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-900">flex-1</code>{" "}
+          main); more rhythm notes can extend the same folder later.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link

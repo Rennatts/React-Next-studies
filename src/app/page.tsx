@@ -130,7 +130,7 @@ const topics = [
   {
     title: "Design system — spacing patterns",
     description:
-      "Layers, split, columns, grid, inline (line-box, baseline), and inline-bundle (flex gap); semantic tokens; when to use stack vs grid vs typographic inline.",
+      "Layers, split, columns, grid, inline, inline-bundle, pad, center, media-wrapper, cover (min-height shell, flex-1 main); semantic tokens; gap vs padding vs margin.",
     href: "/studies/design-system/spacing-patterns",
     category: "Design system",
   },

@@ -1,6 +1,6 @@
 # Spacing patterns in design systems
 
-**Spacing** is how empty space separates, groups, and aligns UI. A mature system does not stop at a **scale** (4, 8, 12…)—it documents **patterns**: *when* to use which step, *where* in the hierarchy, and *who* owns the gap (parent vs child). This note covers the **layers** pattern (structural tiers), the **split** pattern (two clusters at opposite ends of a row), the **columns** pattern (parallel **inline** tracks with **symmetric gutters**), the **grid** pattern (**two-dimensional** tracks, **row and column gap** together, and alignment to a **layout grid**), the **inline** pattern (**line-box** flow, **baseline** alignment, spacing **with running text**), and the **inline-bundle** pattern (a **flex-level** horizontal run of **tightly related** items that share **one `gap`** and **read as one unit** to siblings).
+**Spacing** is how empty space separates, groups, and aligns UI. A mature system does not stop at a **scale** (4, 8, 12…)—it documents **patterns**: *when* to use which step, *where* in the hierarchy, and *who* owns the gap (parent vs child). This note covers the **layers** pattern (structural tiers), the **split** pattern (two clusters at opposite ends of a row), the **columns** pattern (parallel **inline** tracks with **symmetric gutters**), the **grid** pattern (**two-dimensional** tracks, **row and column gap** together, and alignment to a **layout grid**), the **inline** pattern (**line-box** flow, **baseline** alignment, spacing **with running text**), the **inline-bundle** pattern (a **flex-level** horizontal run of **tightly related** items that share **one `gap`** and **read as one unit** to siblings), the **pad** pattern (**padding** / **inset** between **border and content**, symmetric or **squish**), the **center** pattern (**max measure** + **inline-axis centering**, usually **`margin-inline: auto`** with **page padding**), the **media-wrapper** pattern (**aspect-ratio frame** for **img/video/embeds**, **`object-fit`**, clipping, and **intrinsic** `width`/`height` to limit **CLS**), and the **cover** pattern (**minimum block height**—often **viewport**—with **header / growing main / footer** on the **block axis**).
 
 ## Primitive scale vs semantic use
 
@@ -221,6 +221,109 @@ Inline-bundles usually sit in the **cluster** or **inline / micro** layer. They 
 - **Leaking bundle spacing outward** — e.g. `margin-inline-end` on the last chip to “separate from the button”; prefer **gap** on the parent row or a [split](#pattern-split) between **bundles** and actions.
 - **Unbounded horizontal growth** — dozens of chips in one non-wrapping, non-scrolling row; define **max lines**, **+N overflow**, or **wrap** with rules.
 - **One bundle mixing unrelated intents** — e.g. destructive action tucked inside a metadata chip row; breaks scan patterns and **group** semantics.
+
+## Pattern: pad
+
+**Pad** means **`padding` on the container** between its **edge** (border, radius, shadow box) and **its children**—the **inset** you document as `space.inset.*` (or platform equivalents). It answers: “How far does content sit **inside** this surface?” It is **not** spacing **between** flex/grid siblings (that is **`gap`**) and not **pushing the whole box** away from neighbors (that is usually **`margin`** on the outer layout or **parent `gap`**).
+
+### Symmetric vs squish
+
+- **Symmetric** — Same token on all sides (`padding: var(--space-inset-md)`), typical for **cards**, **dialogs**, and **panels**.
+- **Squish (asymmetric)** — Different **inline** vs **block** padding (e.g. **wider** `padding-inline` than `padding-block`) for **toolbars**, **table headers**, and **compact** strips so controls stay **short** while text still has **horizontal** breath.
+
+### Relation to layers
+
+Pad maps to the **region / container** layer for shells and to **inline / micro** for **control internals** (button padding). It pairs with [layers](#pattern-layers-structural): use **pad** for **border → content**, **`gap`** for **child → child**.
+
+### Example (card + squish toolbar)
+
+Symmetric card inset and asymmetric inner strip—see [`PadPatternExample.tsx`](./PadPatternExample.tsx).
+
+### Anti-patterns
+
+- **Margin-stacking “fake pad”** — multiple children each with `margin` to simulate an inset box; prefer **one padding** on the parent surface.
+- **Padding + redundant outer margin** on the same concern — same air applied twice (see [layers](#pattern-layers-structural) anti-patterns).
+- **Gutter tokens as card interior pad** — **column gutters** belong on the **grid parent**; card bodies use **inset** steps, or you lose a clear vocabulary in review.
+
+## Pattern: center
+
+The **center** pattern caps the **readable or layout width** of a block and **centers it on the inline axis** (in LTR/RTL: horizontally in horizontal writing modes). Typical tools: **`max-width`** from a **layout** or **typography** token (`layout.measure`, `prose` width) plus **`margin-inline: auto`** on that block, with **`padding-inline`** on the same wrapper or an outer **page** shell so content never touches the viewport rim on phones.
+
+### When to use it
+
+- **Article body**, **settings forms**, **marketing copy**—any single column that should not grow past a comfortable measure on ultra-wide monitors.
+- **Modals** already centered by overlay positioning may still use an **inner** max-width for the dialog panel itself.
+
+### Center vs columns / grid
+
+- **Center** — **One** main column; no **gutter** between multiple tracks—only **space to the left and right of the same box**.
+- **Columns / grid** — **Multiple** tracks with **gap** or gutters between them; centering can happen **inside** one grid cell but is not the same primitive.
+
+### Relation to layers
+
+Belongs with **page / shell** (and sometimes **region**) alongside **`space.page.inline`**. Do not confuse **centering the column** with **padding inside** every child—[pad](#pattern-pad) the wrapper once.
+
+### Example (measure + `mx-auto`)
+
+Capped width, **`margin-inline: auto`**, and page-inline padding—see [`CenterPatternExample.tsx`](./CenterPatternExample.tsx).
+
+### Anti-patterns
+
+- **`text-align: center`** on long **body paragraphs** — centers each line awkwardly; use **`mx-auto`** on a **block** with max-width for the column, left-align text inside unless designing a hero.
+- **Max-width on every paragraph** — set **one wrapper**; avoid repeating the same constraint on each element.
+- **`transform: translate`** to center layout blocks — fragile (overflow, subpixel); prefer **auto margins** or **flex/grid** alignment documented by the system.
+
+## Pattern: media-wrapper
+
+A **media-wrapper** is a **layout shell** around **replaced content**—images, video, maps, PDF embeds—so the **surrounding page** gets a **stable box**: predictable **height** (via **`aspect-ratio`** or equivalent), **overflow** clipping when combined with **radius**, and **`object-fit`** (or contain/fill policies) so crops are **intentional**. It is a **layout** pattern first; **spacing tokens** apply to **padding outside** the frame, **gaps** to neighboring blocks, and **captions**, not to “fix” a raw `<img>` with ad-hoc margins.
+
+### What the system should specify
+
+- **Aspect policy** — **Fixed ratios** (`16 / 9`, `4 / 3`, `1 / 1`), **min height** with **max width 100%**, or **uncapped** height for editorial **art direction**—each choice changes how **below-the-fold** rhythm behaves.
+- **Fit policy** — **`cover`** vs **`contain`** vs **`fill`**; document **focal point** or **`object-position`** when marketing crops hero photography.
+- **Performance** — **`width` / `height`** (or CSS sizing) so the browser **reserves space** before decode; pair with **lazy loading** and **priority** rules for LCP candidates.
+- **Embeds** — **Iframe** sandboxes, **consent** gating, and **fallback** height when scripts fail—still expressed as **one wrapper** API in components.
+
+### Relation to other patterns
+
+- **[Pad](#pattern-pad)** — **Figure** or **card** may use **inset** around the whole block; the **ratio box** is often **flush** inside that inset.
+- **[Center](#pattern-center)** — The **figure** often lives inside a **centered** column; the wrapper still prevents the **media band** from exceeding the column width.
+
+### Example (aspect-video + `object-cover`)
+
+See [`MediaWrapperPatternExample.tsx`](./MediaWrapperPatternExample.tsx).
+
+### Anti-patterns
+
+- **Only `max-width: 100%` on the `<img>`** with **no height discipline** — stops horizontal bleed but still **jumps** when the bitmap arrives; pair with **ratio** or explicit **height**.
+- **Hard-coded pixel `height` on every breakpoint** — use **tokens**, **`aspect-ratio`**, or **container queries** where supported instead of duplicating magic numbers.
+- **Border-radius on the `<img>` alone** — without **`overflow: hidden`** on a parent, sibling overlays and **video controls** can paint outside the rounded intent; clip at the **wrapper**.
+
+## Pattern: cover
+
+The **cover** pattern fills at least a **target block height**—classically the **viewport**—with a **column** of regions where **header** and **footer** (or top/bottom chrome) stay **content-sized** and **main** **grows** to absorb leftover **vertical** space. Implementation is usually **`display: flex; flex-direction: column; min-height: 100dvh`** (or **`100svh`**) on the shell, **`flex-shrink: 0`** on bookends, and **`flex-grow: 1`** on **`main`**. Spacing **tokens** apply to **pad** on each band and to **gaps** inside `main` (e.g. [stack](#pattern-layers-structural)), not to “stretch” by setting a fake huge **margin** on the last paragraph.
+
+### What the system should specify
+
+- **Which shell owns `min-height`** — Often **`body` > layout root** or a **route layout** wrapper; avoid duplicating **`min-h-screen`** on every page component.
+- **Viewport units** — Prefer **`dvh` / `svh`** over **`vh`** where supported so **mobile browser chrome** does not clip or double-scroll; document **fallbacks** if you must support older engines.
+- **Overflow** — Whether **`main`** **scrolls** (`overflow-y-auto`, **`min-h-0`** on flex children when nested) or the **whole page** scrolls; sticky headers change the contract.
+- **Optional centering** — **`justify-center`** on `main` when the design wants **vertical centering** of a short hero inside the grown area (pairs with [center](#pattern-center) for **max-width** of the hero column).
+
+### Relation to other patterns
+
+- **[Split](#pattern-split)** — The **header** inside a cover shell is often a **split** row (brand vs actions).
+- **[Stack](#pattern-layers-structural)** — **Inside** `main`, sibling sections still use **stack gap**; cover only solves **shell-level** height distribution.
+
+### Example (flex column + `flex-1` main)
+
+Bounded-height demo of **header / growing main / footer**—see [`CoverPatternExample.tsx`](./CoverPatternExample.tsx).
+
+### Anti-patterns
+
+- **`min-height: 100vh` on every nested route** — stacks with **ancestors** that also set full height and causes **double scroll** or **zero-height flex** bugs; pick **one** owner.
+- **`flex-1` without `min-h-0` on nested scrollers** — flex items default to **`min-height: auto`**; inner lists may **refuse to shrink** and break overflow scrolling—document the **`min-h-0`** escape hatch.
+- **Footer `position: fixed` as a substitute** — bypasses cover semantics and complicates **keyboard overlap**, **focus order**, and **safe area**; prefer **flex cover** unless the product truly needs a fixed dock.
 
 ## Relation to other topics
 
