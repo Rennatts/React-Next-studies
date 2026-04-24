@@ -50,6 +50,13 @@ const topics = [
     href: "/studies/design-patterns/composition-components",
     category: "Design patterns",
   },
+  {
+    title: "Partial components",
+    description:
+      "Create preset components by pre-filling props (partial application): PrimaryButton, DangerButton, etc.",
+    href: "/studies/design-patterns/partial-components",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
