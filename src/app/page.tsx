@@ -29,6 +29,20 @@ const topics = [
     href: "/studies/design-patterns/custom-hooks",
     category: "Design patterns",
   },
+  {
+    title: "Functional programming in React",
+    description:
+      "Pure functions, immutable updates, composition, and reducers—FP ideas that fit React’s mental model.",
+    href: "/studies/design-patterns/functional-programming",
+    category: "Design patterns",
+  },
+  {
+    title: "Recursive components",
+    description:
+      "Render tree-shaped data via recursion; pair with pure functions and immutable updates for predictable state changes.",
+    href: "/studies/design-patterns/recursive-components",
+    category: "Design patterns",
+  },
 ] as const;
 
 export default function Home() {
