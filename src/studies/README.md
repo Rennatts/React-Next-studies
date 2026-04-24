@@ -28,3 +28,4 @@ Add new rows here when you create more topics.
 | Keys in React | [`advanced-concepts/keys`](./advanced-concepts/keys/) | `/studies/advanced-concepts/keys` |
 | Event listeners | [`advanced-concepts/event-listeners`](./advanced-concepts/event-listeners/) | `/studies/advanced-concepts/event-listeners` |
 | useLayoutEffect | [`advanced-concepts/use-layout-effect`](./advanced-concepts/use-layout-effect/) | `/studies/advanced-concepts/use-layout-effect` |
+| useId | [`advanced-concepts/use-id`](./advanced-concepts/use-id/) | `/studies/advanced-concepts/use-id` |

@@ -106,6 +106,13 @@ const topics = [
     href: "/studies/advanced-concepts/use-layout-effect",
     category: "Advanced concepts",
   },
+  {
+    title: "useId",
+    description:
+      "Generate stable, SSR-safe ids for labels and ARIA attributes; avoid Math.random() hydration mismatches.",
+    href: "/studies/advanced-concepts/use-id",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {
