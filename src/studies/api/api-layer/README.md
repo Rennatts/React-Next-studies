@@ -37,6 +37,64 @@ To keep this runnable, we also add a small **Route Handler** endpoint:
 - **`endpoints`**: `getProducts()`, `createOrder()`, etc. (one function per endpoint)
 - **`hooks` (optional)**: `useProductsQuery()` built on top (or use TanStack Query)
 
+## Avoiding flickering loaders (UX)
+
+“Flicker” happens when requests complete so fast that the UI flashes:
+
+loading → loaded → loading → loaded
+
+Common strategies (mix and match):
+
+### 1) Delay showing the spinner
+
+Only show a loader if the request takes longer than \(N\) ms (e.g. 200–400ms).
+
+```tsx
+const [loading, setLoading] = useState(false);
+const [showSpinner, setShowSpinner] = useState(false);
+
+useEffect(() => {
+  if (!loading) {
+    setShowSpinner(false);
+    return;
+  }
+  const t = setTimeout(() => setShowSpinner(true), 250);
+  return () => clearTimeout(t);
+}, [loading]);
+```
+
+This keeps quick requests feeling instantaneous while still providing feedback for slower ones.
+
+### 2) Keep previous data while revalidating
+
+Instead of clearing data when you reload, keep the last successful result visible and show a subtle “refreshing” state.
+
+Practical rule:
+
+- **First load**: show skeleton/spinner
+- **Refetch** (filters/polling): keep old data + small pending indicator
+
+### 3) Use skeletons for layout stability
+
+Skeletons prevent layout jumping (especially lists/cards) and feel smoother than a spinner for content-heavy UIs.
+
+### 4) Mark expensive derived UI as non-urgent
+
+For “type to filter” and similar interactions:
+
+- Use `useDeferredValue` to defer derived UI
+- Or `useTransition` to mark the expensive state update as non-urgent and show `isPending`
+
+These reduce jank and avoid “busy flashing” during rapid updates.
+
+### 5) Avoid toggling loaders on every micro-request
+
+If you’re firing multiple requests quickly (search as you type):
+
+- Debounce the request
+- Cancel previous requests (`AbortController`)
+- Coalesce multiple updates into one state change
+
 ## Base URL: best practice (Next.js)
 
 In Next.js you usually have **two** scenarios.
