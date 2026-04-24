@@ -34,6 +34,10 @@ Prefer **the container that defines the sibling relationship** to own spacing be
 - In **flex** or **grid**, use **`gap`** on the parent for **stack / flow** layer spacing—avoids margin collapse and “last item” hacks.
 - Use **padding** on the region for **inset**; reserve **margin** mainly for **separating** distinct regions when `gap` is not available.
 
+### Example (nested layers)
+
+**`main`** = **page** padding; **`article`** = **region inset** + **section** margin; inner column = **stack** `gap`; each field block = **cluster** `gap`; **button** = **inline / micro** padding. Full HTML (in a comment) and React + Tailwind live in [`LayerPatternLayersExample.tsx`](./LayerPatternLayersExample.tsx).
+
 ### Anti-patterns
 
 - **Same concern, two layers** — e.g. huge section margin *and* duplicate padding on every inner card for the same visual breath.
@@ -57,6 +61,10 @@ A **split** is a **single horizontal row** (in LTR; use **logical** `start` / `e
 ### Relation to layers
 
 The **split row** often sits at **region** or **page** layer (full-width bar). Spacing **inside** each cluster is **not** “split spacing”—it is still **cluster** / **micro** tokens. The split pattern answers **alignment across the main axis**, not which `space.*` fills the middle.
+
+### Example (split row)
+
+Two cluster wrappers on one flex row with **`justify-content: space-between`**, **`gap`** inside each cluster, and **`min-w-0`** on the start side for truncation—see [`SplitPatternExample.tsx`](./SplitPatternExample.tsx).
 
 ### Anti-patterns
 
@@ -87,6 +95,10 @@ A **column layout** divides space along the **inline axis** into **two or more p
 ### Relation to layers
 
 The **grid or flex container** that defines columns usually sits at **page** or **region** layer. **Inset** on the whole grid is still **region** / **page** padding; **inside** each column, use **stack** and **cluster** tokens as usual. Do not push **gutter** responsibility down into every leaf card—keep it on the **layout parent**.
+
+### Example (two-column grid)
+
+CSS Grid with **`gap-x`** / **`gap-y`** mapped to **gutter** vs **stack** tokens, responsive track count, and gutter owned by the parent—see [`ColumnsPatternExample.tsx`](./ColumnsPatternExample.tsx).
 
 ### Anti-patterns
 
@@ -124,6 +136,10 @@ A **card gallery** implemented as CSS Grid with `auto-fill` is both: use **colum
 
 **Layout grid** specs usually belong to **page / shell**; **component grids** (tile pickers, keyboard keys) sit in **region**. **Inset** on the grid container is still separate from **inter-cell gap**—do not replace cell **padding** with gutter tokens for “more air” inside a card.
 
+### Example (2D shell)
+
+CSS Grid with **separate** `gap-x` / `gap-y` token roles, **explicit rows**, and **column-spanning** header/footer—see [`GridPatternExample.tsx`](./GridPatternExample.tsx).
+
 ### Anti-patterns
 
 - **CSS Grid for a single-axis list** — a **stack** with `gap` is simpler and clearer; grids shine when **2D** rules matter.
@@ -158,6 +174,10 @@ Use **[inline-flex](https://developer.mozilla.org/en-US/docs/Web/CSS/display#inl
 
 The **inline** pattern maps to the **inline / micro** layer in the [layers](#pattern-layers-structural) table. It should not inherit **gutter** or **page** tokens unless the whole paragraph is a layout exception.
 
+### Example (link + inline icon)
+
+**Line-box** copy with **`margin-inline-start`** on an **`inline-block`** icon, **`align-middle`**, and explicit **`{' '}`** text nodes—see [`InlinePatternExample.tsx`](./InlinePatternExample.tsx).
+
 ### Anti-patterns
 
 - **Flex + `gap` for every mid-sentence icon** — can work, but breaks **baseline** continuity and **screen-reader** phrasing if over-wrapped; prefer **true inline** when design is **text-first**.
@@ -190,6 +210,10 @@ Many libraries ship this as **`Cluster`**, **`Inline`**, **`ButtonGroup`**, or *
 ### Relation to layers
 
 Inline-bundles usually sit in the **cluster** or **inline / micro** layer. They should **not** carry **page**-level padding; the parent **region** or **stack** owns separation from other blocks.
+
+### Example (filter chip bundle)
+
+**`flex` + `flex-wrap` + one `gap` token**, **`role="group"`** + **`aria-labelledby`**—see [`InlineBundlePatternExample.tsx`](./InlineBundlePatternExample.tsx).
 
 ### Anti-patterns
 
