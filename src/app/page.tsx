@@ -92,6 +92,13 @@ const topics = [
     href: "/studies/advanced-concepts/keys",
     category: "Advanced concepts",
   },
+  {
+    title: "Event listeners",
+    description:
+      "Add DOM listeners in effects with cleanup; avoid stale closures with ref patterns or intentional resubscription.",
+    href: "/studies/advanced-concepts/event-listeners",
+    category: "Advanced concepts",
+  },
 ] as const;
 
 export default function Home() {

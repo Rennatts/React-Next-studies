@@ -26,3 +26,4 @@ Add new rows here when you create more topics.
 | React portals | [`advanced-concepts/react-portals`](./advanced-concepts/react-portals/) | `/studies/advanced-concepts/react-portals` |
 | Error boundaries | [`advanced-concepts/error-boundaries`](./advanced-concepts/error-boundaries/) | `/studies/advanced-concepts/error-boundaries` |
 | Keys in React | [`advanced-concepts/keys`](./advanced-concepts/keys/) | `/studies/advanced-concepts/keys` |
+| Event listeners | [`advanced-concepts/event-listeners`](./advanced-concepts/event-listeners/) | `/studies/advanced-concepts/event-listeners` |
