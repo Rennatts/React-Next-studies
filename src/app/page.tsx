@@ -141,6 +141,13 @@ const topics = [
     href: "/studies/advanced-concepts/async-react-router",
     category: "Advanced concepts",
   },
+  {
+    title: "Building an API layer",
+    description:
+      "API studies: centralize fetch, normalize errors, and add typed endpoint functions for consistent UI data access.",
+    href: "/studies/api/api-layer",
+    category: "API",
+  },
 ] as const;
 
 export default function Home() {

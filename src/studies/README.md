@@ -33,3 +33,9 @@ Add new rows here when you create more topics.
 | useDeferredValue | [`advanced-concepts/use-deferred-value`](./advanced-concepts/use-deferred-value/) | `/studies/advanced-concepts/use-deferred-value` |
 | useTransition | [`advanced-concepts/use-transition`](./advanced-concepts/use-transition/) | `/studies/advanced-concepts/use-transition` |
 | Async App Router rendering | [`advanced-concepts/async-react-router`](./advanced-concepts/async-react-router/) | `/studies/advanced-concepts/async-react-router` |
+
+## API
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| Building an API layer | [`api/api-layer`](./api/api-layer/) | `/studies/api/api-layer` |
