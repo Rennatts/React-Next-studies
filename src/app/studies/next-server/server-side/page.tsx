@@ -9,12 +9,14 @@ export const metadata: Metadata = {
     "Server Components, async RSC, fetch caching, dynamic APIs, Server Actions, Route Handlers, and the client boundary.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function NextServerSideStudyPage() {
   return (
     <div className="mx-auto flex min-h-screen max-w-xl flex-col gap-8 px-6 py-12">
       <header className="space-y-2">
         <p className="text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-          Next.js (server)
+          Next.js — platform
         </p>
         <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
           Server-side in the App Router

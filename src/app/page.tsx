@@ -324,6 +324,13 @@ const topics = [
     category: "Advanced concepts",
   },
   {
+    title: "Feature-based vs layer-based structure",
+    description:
+      "Project architecture: organize by technical layers vs by product features; trade-offs and a pragmatic hybrid for Next.js apps.",
+    href: "/studies/project-architecture/feature-vs-layer-structure",
+    category: "Project architecture",
+  },
+  {
     title: "Building an API layer",
     description:
       "API studies: centralize fetch, normalize errors, and add typed endpoint functions for consistent UI data access.",

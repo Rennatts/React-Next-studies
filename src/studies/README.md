@@ -65,6 +65,12 @@ Add new rows here when you create more topics.
 | useTransition | [`advanced-concepts/use-transition`](./advanced-concepts/use-transition/) | `/studies/advanced-concepts/use-transition` |
 | Async App Router rendering | [`advanced-concepts/async-react-router`](./advanced-concepts/async-react-router/) | `/studies/advanced-concepts/async-react-router` |
 
+## Project architecture
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| Feature-based vs layer-based structure | [`project-architecture/feature-vs-layer-structure`](./project-architecture/feature-vs-layer-structure/) | `/studies/project-architecture/feature-vs-layer-structure` |
+
 ## API
 
 | Topic | Folder | Demo route |
