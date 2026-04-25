@@ -70,6 +70,8 @@ Add new rows here when you create more topics.
 | Topic | Folder | Demo route |
 |-------|--------|------------|
 | Feature-based vs layer-based structure | [`project-architecture/feature-vs-layer-structure`](./project-architecture/feature-vs-layer-structure/) | `/studies/project-architecture/feature-vs-layer-structure` |
+| Separation of concerns | [`project-architecture/separation-of-concerns`](./project-architecture/separation-of-concerns/) | `/studies/project-architecture/separation-of-concerns` |
+| Reusable components vs domain components | [`project-architecture/reusable-vs-domain-components`](./project-architecture/reusable-vs-domain-components/) | `/studies/project-architecture/reusable-vs-domain-components` |
 
 ## API
 

@@ -331,6 +331,20 @@ const topics = [
     category: "Project architecture",
   },
   {
+    title: "Separation of concerns",
+    description:
+      "Project architecture: keep UI, data loading, domain rules, and side effects separate so modules have one reason to change.",
+    href: "/studies/project-architecture/separation-of-concerns",
+    category: "Project architecture",
+  },
+  {
+    title: "Reusable vs domain components",
+    description:
+      "Project architecture: keep shared UI primitives generic; put business-meaning components in features so changes stay local.",
+    href: "/studies/project-architecture/reusable-vs-domain-components",
+    category: "Project architecture",
+  },
+  {
     title: "Building an API layer",
     description:
       "API studies: centralize fetch, normalize errors, and add typed endpoint functions for consistent UI data access.",
