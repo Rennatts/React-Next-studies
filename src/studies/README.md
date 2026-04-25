@@ -79,6 +79,8 @@ Add new rows here when you create more topics.
 |-------|--------|------------|
 | Building an API layer | [`api/api-layer`](./api/api-layer/) | `/studies/api/api-layer` |
 | API layer with React Query | [`api/api-layer-react-query`](./api/api-layer-react-query/) | `/studies/api/api-layer-react-query` |
+| BFF (Backend for Frontend) | [`api/bff-backend-for-frontend`](./api/bff-backend-for-frontend/) | `/studies/api/bff-backend-for-frontend` |
+| Error handling patterns in APIs | [`api/error-handling-patterns`](./api/error-handling-patterns/) | `/studies/api/error-handling-patterns` |
 
 ## Authentication and security
 

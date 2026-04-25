@@ -359,6 +359,20 @@ const topics = [
     category: "API",
   },
   {
+    title: "BFF (Backend for Frontend)",
+    description:
+      "API study: a Next.js Route Handler acting as a BFF that reshapes upstream data into a UI-friendly contract.",
+    href: "/studies/api/bff-backend-for-frontend",
+    category: "API",
+  },
+  {
+    title: "Error handling patterns in APIs",
+    description:
+      "API studies: pick status codes, standardize an error envelope, return actionable validation errors, and add request ids for tracing.",
+    href: "/studies/api/error-handling-patterns",
+    category: "API",
+  },
+  {
     title: "Auth flows — JWT, cookies, sessions",
     description:
       "Bearer vs httpOnly cookies, server-side sessions, refresh outline, XSS/CSRF reminders, and Next.js cookies/middleware snippets.",
