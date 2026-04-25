@@ -373,6 +373,34 @@ const topics = [
     category: "API",
   },
   {
+    title: "ARIA roles",
+    description:
+      "Accessibility (A11y): prefer semantic HTML, then use ARIA roles with proper accessible names and state.",
+    href: "/studies/accessibility/aria-roles",
+    category: "Accessibility (A11y)",
+  },
+  {
+    title: "Keyboard navigation",
+    description:
+      "Accessibility (A11y): predictable Tab order, visible focus, Escape to close, and roving tabindex for arrow-key widgets.",
+    href: "/studies/accessibility/keyboard-navigation",
+    category: "Accessibility (A11y)",
+  },
+  {
+    title: "Screen reader behavior",
+    description:
+      "Accessibility (A11y): how role/name/state gets announced, reading vs focus order, and when to use aria-live regions.",
+    href: "/studies/accessibility/screen-reader-behavior",
+    category: "Accessibility (A11y)",
+  },
+  {
+    title: "Semantic HTML in React",
+    description:
+      "Accessibility (A11y): use semantic elements (buttons/links/forms/headings/landmarks) before reaching for ARIA.",
+    href: "/studies/accessibility/semantic-html-in-react",
+    category: "Accessibility (A11y)",
+  },
+  {
     title: "Auth flows — JWT, cookies, sessions",
     description:
       "Bearer vs httpOnly cookies, server-side sessions, refresh outline, XSS/CSRF reminders, and Next.js cookies/middleware snippets.",

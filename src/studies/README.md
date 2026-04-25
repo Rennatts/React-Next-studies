@@ -82,6 +82,15 @@ Add new rows here when you create more topics.
 | BFF (Backend for Frontend) | [`api/bff-backend-for-frontend`](./api/bff-backend-for-frontend/) | `/studies/api/bff-backend-for-frontend` |
 | Error handling patterns in APIs | [`api/error-handling-patterns`](./api/error-handling-patterns/) | `/studies/api/error-handling-patterns` |
 
+## Accessibility (A11y)
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| ARIA roles | [`accessibility/aria-roles`](./accessibility/aria-roles/) | `/studies/accessibility/aria-roles` |
+| Keyboard navigation | [`accessibility/keyboard-navigation`](./accessibility/keyboard-navigation/) | `/studies/accessibility/keyboard-navigation` |
+| Screen reader behavior | [`accessibility/screen-reader-behavior`](./accessibility/screen-reader-behavior/) | `/studies/accessibility/screen-reader-behavior` |
+| Semantic HTML in React | [`accessibility/semantic-html-in-react`](./accessibility/semantic-html-in-react/) | `/studies/accessibility/semantic-html-in-react` |
+
 ## Authentication and security
 
 | Topic | Folder | Demo route |
