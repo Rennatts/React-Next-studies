@@ -484,6 +484,41 @@ const topics = [
     href: "/studies/performance-optimization/font-optimization",
     category: "Performance optimization",
   },
+  {
+    title: "Build process (Next.js build pipeline)",
+    description:
+      "Build & deployment: what next build does, static vs dynamic routes, prerendering, and the .next output folder.",
+    href: "/studies/build-deployment/build-process-next-build-pipeline",
+    category: "Build & deployment",
+  },
+  {
+    title: "Environment variables (Next.js)",
+    description:
+      "Build & deployment: server vs client env vars, NEXT_PUBLIC exposure, build-time vs runtime behavior, and safe validation patterns.",
+    href: "/studies/build-deployment/environment-variables",
+    category: "Build & deployment",
+  },
+  {
+    title: "CI/CD basics",
+    description:
+      "Build & deployment: CI checks, build artifacts, preview/staging/prod deploys, secrets handling, and post-deploy monitoring.",
+    href: "/studies/build-deployment/ci-cd-basics",
+    category: "Build & deployment",
+  },
+  {
+    title: "Deployment platform: Vercel (Next.js)",
+    description:
+      "Build & deployment: how Vercel deploys Next.js (static vs dynamic vs edge), preview/prod environments, env vars, and caching mental model.",
+    href: "/studies/build-deployment/vercel-nextjs",
+    category: "Build & deployment",
+  },
+  {
+    title: "Edge deployment concepts",
+    description:
+      "Build & deployment: edge runtime vs Node constraints, best-fit workloads (middleware), caching, and how edge fits on Next-native hosts.",
+    href: "/studies/build-deployment/edge-deployment-concepts",
+    category: "Build & deployment",
+  },
 ] as const;
 
 export default function Home() {

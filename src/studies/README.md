@@ -112,3 +112,13 @@ Add new rows here when you create more topics.
 | Debouncing | [`performance-optimization/debouncing`](./performance-optimization/debouncing/) | `/studies/performance-optimization/debouncing` |
 | Image optimization (next/image) | [`performance-optimization/next-image`](./performance-optimization/next-image/) | `/studies/performance-optimization/next-image` |
 | Font optimization (next/font) | [`performance-optimization/font-optimization`](./performance-optimization/font-optimization/) | `/studies/performance-optimization/font-optimization` |
+
+## Build & deployment
+
+| Topic | Folder | Demo route |
+|-------|--------|------------|
+| Build process (Next.js build pipeline) | [`build-deployment/build-process-next-build-pipeline`](./build-deployment/build-process-next-build-pipeline/) | `/studies/build-deployment/build-process-next-build-pipeline` |
+| Environment variables | [`build-deployment/environment-variables`](./build-deployment/environment-variables/) | `/studies/build-deployment/environment-variables` |
+| CI/CD basics | [`build-deployment/ci-cd-basics`](./build-deployment/ci-cd-basics/) | `/studies/build-deployment/ci-cd-basics` |
+| Deployment platform: Vercel (Next.js) | [`build-deployment/vercel-nextjs`](./build-deployment/vercel-nextjs/) | `/studies/build-deployment/vercel-nextjs` |
+| Edge deployment concepts | [`build-deployment/edge-deployment-concepts`](./build-deployment/edge-deployment-concepts/) | `/studies/build-deployment/edge-deployment-concepts` |
